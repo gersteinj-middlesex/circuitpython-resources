@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: CircuitPython Resources
 nav:
   - Home: index.md
   - Board: board.md
@@ -12,6 +12,10 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.keys
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  - abbr
+  - pymdownx.snippets
+  # - attr_list
+  - def_list
