@@ -13,7 +13,7 @@
     
     
       
-        <title>Development Environment - Physical Computing Resources</title>
+        <title>Links - Physical Computing Resources</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#development-environment" class="md-skip">
+        <a href="#links-external-resources" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Development Environment
+              Links
             
           </span>
         </div>
@@ -224,6 +224,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../ide/" class="md-nav__link">
+        Development Environment
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -235,56 +250,10 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Development Environment
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Development Environment
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#circuitpython-online-ide-interface" class="md-nav__link">
-    CircuitPython Online IDE Interface
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../more-resources/" class="md-nav__link">
         Links
       </a>
+      
     </li>
   
 
@@ -371,21 +340,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#circuitpython-online-ide-interface" class="md-nav__link">
-    CircuitPython Online IDE Interface
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -397,31 +351,12 @@
               
                 
 
-<h1 id="development-environment">Development Environment</h1>
-<p>The <abbr title="Integrated Development Environment">IDE</abbr> is the program in which you will write your code. An <abbr title="Integrated Development Environment">IDE</abbr> is an all-in-one program that lets you write and run code, often with many other features included. For working with microcontrollers, an <abbr title="Integrated Development Environment">IDE</abbr> should have a <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr>. You don't technically need an <abbr title="Integrated Development Environment">IDE</abbr> - you can write your code in any text editor (like Notepad on Windows) and run your code separately, but an <abbr title="Integrated Development Environment">IDE</abbr> is a lot more convenient.</p>
-<p>For work in this class, we'll be using the <a href="https://urfdvw.github.io/CircuitPython-online-IDE/">CircuitPython Online <abbr title="Integrated Development Environment">IDE</abbr></a> because it works on Chromebooks.</p>
-<h2 id="circuitpython-online-ide-interface">CircuitPython Online <abbr title="Integrated Development Environment">IDE</abbr> Interface</h2>
-<p><img alt="screenshot of the online IDE" src="../img/online-ide-annotated.png" /></p>
-<dl>
-<dt><code>1 - Connect</code></dt>
-<dd>This button will let you connect the board to the <abbr title="Integrated Development Environment">IDE</abbr> so you can interact with it from your computer. When connected, it will show <code>connected</code> instead of <code>connect</code>, but watch out - if the board gets disconnected accidentally, the online <abbr title="Integrated Development Environment">IDE</abbr> doesn't know so it'll still say <code>connected</code> and you'll need to reload the page</dd>
-<dt><code>2 - Open</code></dt>
-<dd>This button will let you open files from your board. If you don't see your files, make sure you're looking in the right folder!</dd>
-<dt><code>3 - Save and Run</code></dt>
-<dd>This button will save your code and reboot the board so the code runs</dd>
-<dt><code>4 - Save As</code></dt>
-<dd>This will let you save a copy of the file you're currently editing. Don't forget to save your work to your computer. There's no guarantee it will still be on the board when you get it back!</dd>
-<dt><code>5 - Editor Window</code></dt>
-<dd>This is the window where you'll edit your code</dd>
-<dt><code>6 - Serial Console</code></dt>
-<dd>This window contains the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr> so you can interact with the board</dd>
-<dt><code>7 - Command Window</code></dt>
-<dd>This is where you'll type inputs for the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr></dd>
-<dt><code>8 - Force Stop</code></dt>
-<dd>This button will use the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr>'s <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-c">C</kbd></span> shortcut to force stop whatever's running. You can also do this from the keyboard, but watch out for the change to the shortcut. In the online <abbr title="Integrated Development Environment">IDE</abbr>, you'll need to use <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd></span> + <span class="keys"><kbd class="key-c">C</kbd></span> and may still run into issues because it may bring up the browser's developer tools</dd>
-<dt><code>9 - Reboot</code></dt>
-<dd>This button will use the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr>'s <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-d">D</kbd></span> shortcut to reboot the board. You can also do this from the keyboard, but watch out for the change to the shortcut. In the online <abbr title="Integrated Development Environment">IDE</abbr>, you'll need to use <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd></span> + <span class="keys"><kbd class="key-d">D</kbd></span> or you'll end up bookmarking the website instead</dd>
-</dl>
+<h1 id="links-external-resources">Links &amp; External Resources</h1>
+<ul>
+<li><a href="https://urfdvw.github.io/CircuitPython-online-IDE/">CircuitPython Online IDE</a>: This is a good way to program the board when you're on a Chromebook</li>
+<li><a href="https://wokwi.com/arduino/new?template=circuitpython-pi-pico">CircuitPython Simulator</a>: This will let you practice without a physical board</li>
+<li></li>
+</ul>
 
               
             </article>
@@ -435,7 +370,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../board/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Troubleshooting" rel="prev">
+        <a href="../ide/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Development Environment" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -444,20 +379,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Troubleshooting
+              Development Environment
             </div>
           </div>
         </a>
       
       
         
-        <a href="../more-resources/" class="md-footer__link md-footer__link--next" aria-label="Next: Links" rel="next">
+        <a href="../exercises/001-printing/" class="md-footer__link md-footer__link--next" aria-label="Next: 001 - Printing" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Links
+              001 - Printing
             </div>
           </div>
           <div class="md-footer__button md-icon">

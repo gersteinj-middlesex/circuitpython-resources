@@ -13,7 +13,7 @@
     
     
       
-        <title>Development Environment - Physical Computing Resources</title>
+        <title>Getting Started - Physical Computing Resources</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#development-environment" class="md-skip">
+        <a href="#getting-started" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Development Environment
+              Getting Started
             
           </span>
         </div>
@@ -194,11 +194,86 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../getting-started/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Getting Started
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#every-time-you-use-the-board" class="md-nav__link">
+    Every Time You Use The Board
+  </a>
+  
+    <nav class="md-nav" aria-label="Every Time You Use The Board">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-you-need" class="md-nav__link">
+    What You Need
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connecting-the-board-to-the-computer" class="md-nav__link">
+    Connecting the Board to the Computer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-programming-with-the-repl" class="md-nav__link">
+    Interactive Programming with the REPL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opening-editing-saving-and-running-py-files" class="md-nav__link">
+    Opening, Editing, Saving, and Running .py Files
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -224,52 +299,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Development Environment
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ide/" class="md-nav__link">
         Development Environment
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#circuitpython-online-ide-interface" class="md-nav__link">
-    CircuitPython Online IDE Interface
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -378,8 +412,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#circuitpython-online-ide-interface" class="md-nav__link">
-    CircuitPython Online IDE Interface
+  <a href="#every-time-you-use-the-board" class="md-nav__link">
+    Every Time You Use The Board
+  </a>
+  
+    <nav class="md-nav" aria-label="Every Time You Use The Board">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-you-need" class="md-nav__link">
+    What You Need
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connecting-the-board-to-the-computer" class="md-nav__link">
+    Connecting the Board to the Computer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-programming-with-the-repl" class="md-nav__link">
+    Interactive Programming with the REPL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opening-editing-saving-and-running-py-files" class="md-nav__link">
+    Opening, Editing, Saving, and Running .py Files
   </a>
   
 </li>
@@ -397,31 +465,58 @@
               
                 
 
-<h1 id="development-environment">Development Environment</h1>
-<p>The <abbr title="Integrated Development Environment">IDE</abbr> is the program in which you will write your code. An <abbr title="Integrated Development Environment">IDE</abbr> is an all-in-one program that lets you write and run code, often with many other features included. For working with microcontrollers, an <abbr title="Integrated Development Environment">IDE</abbr> should have a <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr>. You don't technically need an <abbr title="Integrated Development Environment">IDE</abbr> - you can write your code in any text editor (like Notepad on Windows) and run your code separately, but an <abbr title="Integrated Development Environment">IDE</abbr> is a lot more convenient.</p>
-<p>For work in this class, we'll be using the <a href="https://urfdvw.github.io/CircuitPython-online-IDE/">CircuitPython Online <abbr title="Integrated Development Environment">IDE</abbr></a> because it works on Chromebooks.</p>
-<h2 id="circuitpython-online-ide-interface">CircuitPython Online <abbr title="Integrated Development Environment">IDE</abbr> Interface</h2>
-<p><img alt="screenshot of the online IDE" src="../img/online-ide-annotated.png" /></p>
-<dl>
-<dt><code>1 - Connect</code></dt>
-<dd>This button will let you connect the board to the <abbr title="Integrated Development Environment">IDE</abbr> so you can interact with it from your computer. When connected, it will show <code>connected</code> instead of <code>connect</code>, but watch out - if the board gets disconnected accidentally, the online <abbr title="Integrated Development Environment">IDE</abbr> doesn't know so it'll still say <code>connected</code> and you'll need to reload the page</dd>
-<dt><code>2 - Open</code></dt>
-<dd>This button will let you open files from your board. If you don't see your files, make sure you're looking in the right folder!</dd>
-<dt><code>3 - Save and Run</code></dt>
-<dd>This button will save your code and reboot the board so the code runs</dd>
-<dt><code>4 - Save As</code></dt>
-<dd>This will let you save a copy of the file you're currently editing. Don't forget to save your work to your computer. There's no guarantee it will still be on the board when you get it back!</dd>
-<dt><code>5 - Editor Window</code></dt>
-<dd>This is the window where you'll edit your code</dd>
-<dt><code>6 - Serial Console</code></dt>
-<dd>This window contains the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr> so you can interact with the board</dd>
-<dt><code>7 - Command Window</code></dt>
-<dd>This is where you'll type inputs for the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr></dd>
-<dt><code>8 - Force Stop</code></dt>
-<dd>This button will use the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr>'s <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-c">C</kbd></span> shortcut to force stop whatever's running. You can also do this from the keyboard, but watch out for the change to the shortcut. In the online <abbr title="Integrated Development Environment">IDE</abbr>, you'll need to use <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd></span> + <span class="keys"><kbd class="key-c">C</kbd></span> and may still run into issues because it may bring up the browser's developer tools</dd>
-<dt><code>9 - Reboot</code></dt>
-<dd>This button will use the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr>'s <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-d">D</kbd></span> shortcut to reboot the board. You can also do this from the keyboard, but watch out for the change to the shortcut. In the online <abbr title="Integrated Development Environment">IDE</abbr>, you'll need to use <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd></span> + <span class="keys"><kbd class="key-d">D</kbd></span> or you'll end up bookmarking the website instead</dd>
-</dl>
+<h1 id="getting-started">Getting Started</h1>
+<h2 id="every-time-you-use-the-board">Every Time You Use The Board</h2>
+<h3 id="what-you-need">What You Need</h3>
+<ul>
+<li>A development board. For right now, we're using the Adafruit ItsyBity M0 Express, but there are lots of options</li>
+<li>A suitable USB cable. All the boards we have at the school use a micro-USB cable. If you're using your own cable, make sure that it can be used for data - some USB cables are only for power!</li>
+<li>A computer to work with. A Chromebook is fine</li>
+</ul>
+<h3 id="connecting-the-board-to-the-computer">Connecting the Board to the Computer</h3>
+<ol>
+<li>Connect the board to a computer using a USB cable</li>
+<li>Make sure the board shows up in your computer's file system. It should show up as a removable drive (like plugging in a flash drive) and will usually be called <code>CIRCUITPY</code></li>
+<li>Open your development environment. For the Chromebooks, we're using <a href="https://urfdvw.github.io/CircuitPython-online-IDE/">URFDVW's CircuitPython Online IDE</a>. If you want to keep working with this outside of class and you have a computer with a full operating system, there are lots of other options you can use</li>
+<li>Make a software connection between the board and computer. The <a href="https://urfdvw.github.io/CircuitPython-online-IDE/">online IDE</a> won't work if you do this. To make the connection, click the <code>connect</code> button and select your board</li>
+<li>At this point, you should be able to enter the REPL or open/edit/save files on the board's internal storage</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">About USB cables</p>
+<p>Some USB cables can only be used for charging! These cables don't have the necessary wires to send data back and forth, but they don't look any different from a USB cable that does. If the computer doesn't recognize the board, sometimes this is the reason. I will always give you USB cables that can transmit data, but if you're using your own you may run into this problem</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Connected isn't always connected</p>
+<p>If you disconnect your board (or put it into boot mode), it will disconnect from the online IDE, but the button in the IDE will still show <code>connected</code> because it doesn't check on its own. If you run into this problem, refresh the page and redo step 4</p>
+</div>
+<h2 id="interactive-programming-with-the-repl">Interactive Programming with the REPL</h2>
+<p>For this, you'll be working in the serial console. It's the right side of the <a href="https://urfdvw.github.io/CircuitPython-online-IDE/">online IDE</a></p>
+<p>As soon as the board starts up, it will run the <code>code.py</code> or <code>main.py</code> file saved on it (if present). After the code is finished running, you <em>should</em> see an output similar to what's below. If you don't, take a look at the box below that for more information about what's happening!</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>*******************************************
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>Auto-reload is on. Simply save files over USB to run them or enter REPL to disable.
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>Press any key to enter the REPL. Use CTRL-D to reload.
+</code></pre></div>
+</td></tr></table>
+<div class="admonition question">
+<p class="admonition-title">Help, I don't see that!</p>
+<p>Remember how I said that the board will immediately start running the code that's saved on it? The serial console will only be ready for you to load the REPL after the code finishes running, but sometimes you'll have code on your board that has an infinite loop. If that happens, the code will never stop running so it'll never get to that point. You can spot this happening if your code is constantly showing you some output (either printing or doing something on the board itself), or even if the board is connected but you don't see anything - sometimes the code will be doing things you can't see!</p>
+<p>If this happens to you, force stop the board and you should get the lines above so you can continue on with these directions</p>
+</div>
+<p>At this point, you can click in the Command Window and press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to open up the REPL. If you're successful, you'll see something similar to the lines below. Your version of CircuitPython and your board may be different from mine, but the <code>&gt;&gt;&gt;</code> is called the command prompt, and it shows that you are in (Circuit)Python and the board is waiting for you to give an input. </p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>Adafruit CircuitPython 7.1.1 on 2022-01-14; Adafruit ItsyBitsy M0 Express with samd21g18
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>&gt;&gt;&gt; 
+</code></pre></div>
+</td></tr></table>
+<p>To make sure everything's working, do that now! I like to type a math expression like <code>5 * 3</code> into the command window and press <span class="keys"><kbd class="key-enter">Enter</kbd></span>, which should output <code>15</code></p>
+<h2 id="opening-editing-saving-and-running-py-files">Opening, Editing, Saving, and Running .py Files</h2>
+<p>With your board connected to the Online IDE, click the <code>Open</code> button and select your file.</p>
+<p>Now you can edit the file in the Editor window. Each time you click <code>Save and Run</code>, your code will be saved and the board will restart and run the code.</p>
+<p>Don't forget to use <code>Save As</code> before class ends to save a copy to your computer!</p>
 
               
             </article>
@@ -435,7 +530,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../board/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Troubleshooting" rel="prev">
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -444,20 +539,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Troubleshooting
+              Home
             </div>
           </div>
         </a>
       
       
         
-        <a href="../more-resources/" class="md-footer__link md-footer__link--next" aria-label="Next: Links" rel="next">
+        <a href="../board/" class="md-footer__link md-footer__link--next" aria-label="Next: Troubleshooting" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Links
+              Troubleshooting
             </div>
           </div>
           <div class="md-footer__button md-icon">
