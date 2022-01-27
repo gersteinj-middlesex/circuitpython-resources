@@ -1,8 +1,13 @@
-site_name: CircuitPython Resources
+site_name: Physical Computing Resources
 nav:
   - Home: index.md
-  - Board: board.md
-  - IDE: ide.md
+  - Getting Started: getting-started.md
+  - Troubleshooting: board.md
+  - Development Environment: ide.md
+  - Links: more-resources.md
+  - Exercises:
+    - 001 - Printing: exercises\001-printing.md
+    - 002 - Imports: exercises\002-imports.md
 theme:
   name: material
   palette:
@@ -19,3 +24,9 @@ markdown_extensions:
   - pymdownx.snippets
   # - attr_list
   - def_list
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+  # - pymdownx.inlinehilite
+  - pymdownx.superfences 
+  - toc
