@@ -151,4 +151,10 @@ We told the board to pause for 5 seconds after turning the LED on
 
 ## Show me your code in action
 
-To get credit for this exercise, I will need to see your code running. This will be scored for completion. If I am not available to check your work when you're ready, make sure you use `Save As` to save a copy on your computer (not only on the board!) so you can continue on and show me the code running later.
+Total of 5 points
+
+- 5 points: You made your LED blink repeatedly
+- 4.5 points: You made your LED change at least twice
+- 4 points: Your LED turns on
+- 3 points: You set up your LED but it doesn't turn on
+- 0 points: You didn't get a meaningful amount of htis code completed
