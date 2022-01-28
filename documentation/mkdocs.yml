@@ -8,6 +8,7 @@ nav:
   - Exercises:
     - 001 - Printing: exercises\001-printing.md
     - 002 - Imports: exercises\002-imports.md
+    - 003 - DigitalIO: exercises\003-digitalio.md
 theme:
   name: material
   palette:
