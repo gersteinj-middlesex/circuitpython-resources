@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercise-2-digitalio" class="md-skip">
+        <a href="#exercise-3-digitalio" class="md-skip">
           Skip to content
         </a>
       
@@ -395,6 +395,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#part-3-turning-on-the-led" class="md-nav__link">
+    Part 3 - Turning on the LED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-4-delay" class="md-nav__link">
+    Part 4 - Delay!
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -498,6 +512,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#part-3-turning-on-the-led" class="md-nav__link">
+    Part 3 - Turning on the LED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-4-delay" class="md-nav__link">
+    Part 4 - Delay!
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -523,7 +551,7 @@
               
                 
 
-<h1 id="exercise-2-digitalio">Exercise 2 - DigitalIO</h1>
+<h1 id="exercise-3-digitalio">Exercise 3 - DigitalIO</h1>
 <h2 id="goals">Goals</h2>
 <ul>
 <li>Import modules to bring in additional functionality</li>
@@ -561,7 +589,7 @@
 </code></pre></div>
 </td></tr></table>
 <p><strong>What you should see:</strong>
-Nothing yet. Make sure you don't get any errors, though! The reason we're running this code a little at a time is because I want you to go through the process in the right way - if you write the code all at once, it's harder to spot errors and harder to formulate what to do.</p>
+The board should reboot, run the code, and print out a message that it's done running. Make sure you don't get any errors, though! The reason we're running this code a little at a time is because I want you to go through the process in the right way - if you write the code all at once, it's harder to spot errors and harder to formulate what to do.</p>
 <p><strong>What this does:</strong>
 This imports modules for working with the board, working with digital inputs and outputs, and working with time into the code.</p>
 <h3 id="part-2-creating-a-digital-output">Part 2 - Creating a Digital Output</h3>
@@ -584,7 +612,7 @@ This imports modules for working with the board, working with digital inputs and
 <a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="kn">import</span> <span class="nn">digitalio</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="kn">import</span> <span class="nn">time</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5"></a>
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="c1">### NEW CODE BELOW THIS LINE ###</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="c1"># ************************************** #</span>
 <a id="__codelineno-1-7" name="__codelineno-1-7"></a>
 <a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="c1"># create a new DigitalIO object connected to whatever pin the board&#39;s built in LED is attached to.</span>
 <a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="c1"># Assign this to a variable so we can refer to it again</span>
@@ -596,15 +624,109 @@ This imports modules for working with the board, working with digital inputs and
 </code></pre></div>
 </td></tr></table>
 <p><strong>What you should see:</strong>
-In the serial console, you should see it print either <code>True</code> or <code>False</code>. Make sure you don't have any errors. Nothing will light up yet.</p>
+The board should reboot, run the code, and print out a message that it's done running. In the serial console, you should see it print either <code>True</code> or <code>False</code>. Make sure you don't have any errors. Nothing will light up yet.</p>
 <p><strong>What this does:</strong>
 The comments explain this too, but here you go:
 - The first new line of code creates a DigitalIO object. We have to tell it what pin we're using, but instead of giving it a pin number (which we could do, but will vary between boards), we tell it to go look up the definition in the <code>board</code> module and use whatever pin the built in LED is attached to
 - The second new line of code sets this DigitalIO object to be an OUTPUT so it can send signals
 - The third new line of code will print out the value assigned to the LED. True will turn it on, False will turn it off</p>
+<h3 id="part-3-turning-on-the-led">Part 3 - Turning on the LED</h3>
+<p>Save and run this version of the code. Only the code below the line of asterisks <code>******</code> is new. There's an explanation below!</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1"># Import necessary libaries</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kn">import</span> <span class="nn">board</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="kn">import</span> <span class="nn">digitalio</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="kn">import</span> <span class="nn">time</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="c1"># create a new DigitalIO object connected to whatever pin the board&#39;s built in LED is attached to.</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="c1"># Assign this to a variable so we can refer to it again</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="n">led</span> <span class="o">=</span> <span class="n">digitalio</span><span class="o">.</span><span class="n">DigitalInOut</span><span class="p">(</span><span class="n">board</span><span class="o">.</span><span class="n">LED</span><span class="p">)</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="c1"># Set our new DigitalIO object to be an output</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="n">led</span><span class="o">.</span><span class="n">direction</span> <span class="o">=</span> <span class="n">digitalio</span><span class="o">.</span><span class="n">Direction</span><span class="o">.</span><span class="n">OUTPUT</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="c1"># Print the value of the LED</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">led</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="c1"># ************************************** #</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="c1"># Set the LED&#39;s value to True to turn it on</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="n">led</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="kc">True</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="c1"># Print the value of the LED</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">led</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<p><strong>What you should see:</strong>
+In the serial console, you should see it print either <code>True</code> or <code>False</code>, and then on the next line, it should print <code>True</code>, which is the value we assigned to led.value. Make sure you don't have any errors. You won't see anything lighting up, though!</p>
+<p><strong>What this does:</strong>
+We set the LED's value to True to turn it on</p>
 <div class="admonition question">
 <p class="admonition-title">Question</p>
-<p>What data type is only ever going to be True or False?</p>
+<p>Why do you think you didn't see the LED turn on?</p>
+</div>
+<h3 id="part-4-delay">Part 4 - Delay!</h3>
+<p>Save and run this version of the code. Only the code below the line of asterisks <code>******</code> is new. There's an explanation below!</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1"># Import necessary libaries</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="kn">import</span> <span class="nn">board</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="kn">import</span> <span class="nn">digitalio</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="kn">import</span> <span class="nn">time</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="c1"># create a new DigitalIO object connected to whatever pin the board&#39;s built in LED is attached to.</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="c1"># Assign this to a variable so we can refer to it again</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="n">led</span> <span class="o">=</span> <span class="n">digitalio</span><span class="o">.</span><span class="n">DigitalInOut</span><span class="p">(</span><span class="n">board</span><span class="o">.</span><span class="n">LED</span><span class="p">)</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="c1"># Set our new DigitalIO object to be an output</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="n">led</span><span class="o">.</span><span class="n">direction</span> <span class="o">=</span> <span class="n">digitalio</span><span class="o">.</span><span class="n">Direction</span><span class="o">.</span><span class="n">OUTPUT</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="c1"># Print the value of the LED</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">led</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a>
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="c1"># Set the LED&#39;s value to True to turn it on</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="n">led</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="kc">True</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="c1"># Print the value of the LED</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">led</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18"></a>
+<a id="__codelineno-3-19" name="__codelineno-3-19"></a><span class="c1"># ************************************** #</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20"></a><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<p><strong>What you should see:</strong>
+In the serial console, you should see it print either <code>True</code> or <code>False</code>, and then on the next line, it should print <code>True</code>, which is the value we assigned to led.value. Make sure you don't have any errors. You should also see the LED light up for 5 seconds!</p>
+<p><strong>What this does:</strong>
+We told the board to pause for 5 seconds after turning the LED on</p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>How could you turn the LED off and on again?</p>
 </div>
 <h2 id="show-me-your-code-in-action">Show me your code in action</h2>
 <p>To get credit for this exercise, I will need to see your code running. This will be scored for completion. If I am not available to check your work when you're ready, make sure you use <code>Save As</code> to save a copy on your computer (not only on the board!) so you can continue on and show me the code running later.</p>
