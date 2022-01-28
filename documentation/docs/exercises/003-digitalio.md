@@ -1,4 +1,4 @@
-# Exercise 2 - DigitalIO
+# Exercise 3 - DigitalIO
 
 ## Goals
 - Import modules to bring in additional functionality
@@ -16,7 +16,6 @@
 - input
 - output
 - dot notation
-
 
 ## Background Info
 
@@ -40,7 +39,7 @@ import time
 ```
 
 **What you should see:**
-Nothing yet. Make sure you don't get any errors, though! The reason we're running this code a little at a time is because I want you to go through the process in the right way - if you write the code all at once, it's harder to spot errors and harder to formulate what to do.
+The board should reboot, run the code, and print out a message that it's done running. Make sure you don't get any errors, though! The reason we're running this code a little at a time is because I want you to go through the process in the right way - if you write the code all at once, it's harder to spot errors and harder to formulate what to do.
 
 **What this does:**
 This imports modules for working with the board, working with digital inputs and outputs, and working with time into the code.
@@ -55,7 +54,7 @@ import board
 import digitalio
 import time
 
-### NEW CODE BELOW THIS LINE ###
+# ************************************** #
 
 # create a new DigitalIO object connected to whatever pin the board's built in LED is attached to.
 # Assign this to a variable so we can refer to it again
@@ -68,7 +67,7 @@ print(led.value)
 ```
 
 **What you should see:**
-In the serial console, you should see it print either `True` or `False`. Make sure you don't have any errors. Nothing will light up yet.
+The board should reboot, run the code, and print out a message that it's done running. In the serial console, you should see it print either `True` or `False`. Make sure you don't have any errors. Nothing will light up yet.
 
 **What this does:**
 The comments explain this too, but here you go:
@@ -76,8 +75,77 @@ The comments explain this too, but here you go:
 - The second new line of code sets this DigitalIO object to be an OUTPUT so it can send signals
 - The third new line of code will print out the value assigned to the LED. True will turn it on, False will turn it off
 
+
+### Part 3 - Turning on the LED
+
+Save and run this version of the code. Only the code below the line of asterisks `******` is new. There's an explanation below!
+
+```python
+# Import necessary libaries
+import board
+import digitalio
+import time
+
+# create a new DigitalIO object connected to whatever pin the board's built in LED is attached to.
+# Assign this to a variable so we can refer to it again
+led = digitalio.DigitalInOut(board.LED)
+# Set our new DigitalIO object to be an output
+led.direction = digitalio.Direction.OUTPUT
+# Print the value of the LED
+print(led.value)
+
+# ************************************** #
+# Set the LED's value to True to turn it on
+led.value = True
+# Print the value of the LED
+print(led.value)
+
+```
+
+**What you should see:**
+In the serial console, you should see it print either `True` or `False`, and then on the next line, it should print `True`, which is the value we assigned to led.value. Make sure you don't have any errors. You won't see anything lighting up, though!
+
+**What this does:**
+We set the LED's value to True to turn it on
+
 !!! Question
-    What data type is only ever going to be True or False?
+    Why do you think you didn't see the LED turn on?
+
+### Part 4 - Delay!
+
+Save and run this version of the code. Only the code below the line of asterisks `******` is new. There's an explanation below!
+
+```python
+# Import necessary libaries
+import board
+import digitalio
+import time
+
+# create a new DigitalIO object connected to whatever pin the board's built in LED is attached to.
+# Assign this to a variable so we can refer to it again
+led = digitalio.DigitalInOut(board.LED)
+# Set our new DigitalIO object to be an output
+led.direction = digitalio.Direction.OUTPUT
+# Print the value of the LED
+print(led.value)
+
+# Set the LED's value to True to turn it on
+led.value = True
+# Print the value of the LED
+print(led.value)
+
+# ************************************** #
+time.sleep(5)
+```
+
+**What you should see:**
+In the serial console, you should see it print either `True` or `False`, and then on the next line, it should print `True`, which is the value we assigned to led.value. Make sure you don't have any errors. You should also see the LED light up for 5 seconds!
+
+**What this does:**
+We told the board to pause for 5 seconds after turning the LED on
+
+!!! Question
+    How could you turn the LED off and on again?
 
 
 
