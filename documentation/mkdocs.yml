@@ -9,6 +9,7 @@ nav:
     - 001 - Printing: exercises\001-printing.md
     - 002 - Imports: exercises\002-imports.md
     - 003 - DigitalIO: exercises\003-digitalio.md
+    - 004 - Blink Pattern: exercises\004-blink-pattern.md
 theme:
   name: material
   palette:
