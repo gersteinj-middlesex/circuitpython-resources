@@ -6,8 +6,8 @@ nav:
   - Development Environment: ide.md
   - Links: more-resources.md
   - Quick Reference:
-    - Data Types and Variables: quickref\data-and-variables
-    - Control Structures: quickref\control-structures
+    - Data Types and Variables: quickref\data-and-variables.md
+    - Control Structures: quickref\control-structures.md
   - Exercises:
     - 001 - Printing: exercises\001-printing.md
     - 002 - Imports: exercises\002-imports.md
