@@ -67,3 +67,5 @@ Total of 5 points
 - 4 points: You created a for loop to blink your LED, but didn't utilize the variable
 - 3 points: You set up your LED but didn't blink it
 - 0 points: You didn't get a meaningful amount of this code completed
+
+--8<-- "includes/glossary.md"

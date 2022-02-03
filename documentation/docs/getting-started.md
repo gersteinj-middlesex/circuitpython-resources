@@ -57,3 +57,5 @@ With your board connected to the Online IDE, click the `Open` button and select 
 Now you can edit the file in the Editor window. Each time you click `Save and Run`, your code will be saved and the board will restart and run the code.
 
 Don't forget to use `Save As` before class ends to save a copy to your computer!
+
+--8<-- "includes/glossary.md"

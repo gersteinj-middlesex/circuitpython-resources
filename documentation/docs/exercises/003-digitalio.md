@@ -157,4 +157,6 @@ Total of 5 points
 - 4.5 points: You made your LED change at least twice
 - 4 points: Your LED turns on
 - 3 points: You set up your LED but it doesn't turn on
-- 0 points: You didn't get a meaningful amount of htis code completed
+- 0 points: You didn't get a meaningful amount of this code completed
+
+--8<-- "includes/glossary.md"

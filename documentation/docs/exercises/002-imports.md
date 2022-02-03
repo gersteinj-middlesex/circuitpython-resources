@@ -45,3 +45,5 @@ Press any key to enter the REPL. Use CTRL-D to reload.
 ## Show me your code in action
 
 To get credit for this exercise, I will need to see your code running. This will be scored for completion. If I am not available to check your work when you're ready, make sure you use `Save As` to save a copy on your computer (not only on the board!) so you can continue on and show me the code running later.
+
+--8<-- "includes/glossary.md"
