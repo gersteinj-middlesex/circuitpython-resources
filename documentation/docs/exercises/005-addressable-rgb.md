@@ -33,7 +33,7 @@ led = adafruit_dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1)
 led.brightness = 0.3 #(2)
 
 while True: #(3)
-    led[0] = (255, 0, 0) (#4)
+    led[0] = (255, 0, 0) #(4)
     time.sleep(0.5)
     led[0] = (0, 255, 0)
     time.sleep(0.5)
