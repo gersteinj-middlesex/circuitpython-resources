@@ -39,7 +39,7 @@ if not lib_dir.exists():
 else:
     try:
         for f in lib_dir.glob('*'):
-            if f in [lib_dir / 'neopixel.mpy']:
+            if f in [lib_dir / 'neopixel.mpy', lib_dir / 'adafruit_dotstar.mpy']:
                 print(f'Keep {f}')
             else:
                 if f.is_dir():
