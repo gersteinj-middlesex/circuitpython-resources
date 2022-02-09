@@ -13,12 +13,15 @@ nav:
     - 002 - Imports: exercises\002-imports.md
     - 003 - DigitalIO: exercises\003-digitalio.md
     - 004 - Blink Pattern: exercises\004-blink-pattern.md
+    - 005 - Addressable LED: exercises\005-addressable-rgb.md
 theme:
   name: material
   palette:
     scheme: slate
     primary: cyan
     accent: deep purple
+  features:
+    - content.code.annotate
 markdown_extensions:
   - admonition
   - pymdownx.keys
