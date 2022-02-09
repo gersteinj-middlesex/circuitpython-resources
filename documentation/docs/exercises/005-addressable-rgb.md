@@ -10,6 +10,7 @@
 - Connect your board to the computer and open the `main.py` file. Please make sure you're opening the one on your board, not a copy saved on your computer! See [getting started](../getting-started.md) for help with this step. 
 - We'll be running code from a python file today
 - To make sure you're working with the correct file, add a print function to your code (for instance, `print("It's time to play with LEDs")`) and make sure it runs
+- After you've done that, please copy and paste the sample code below to your `main.py` file
 
 ## Concepts & Vocabulary
 - tuple
@@ -24,8 +25,8 @@ import time
 import board
 
 # For Trinket M0, Gemma M0, ItsyBitsy M0 Express, and ItsyBitsy M4 Express # (1)
-import adafruit_dotstar
-led = adafruit_dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1)
+# import adafruit_dotstar
+# led = adafruit_dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1)
 # For Feather M0 Express, Metro M0 Express, Metro M4 Express, Circuit Playground Express, QT Py M0
 # import neopixel
 # led = neopixel.NeoPixel(board.NEOPIXEL, 1)
