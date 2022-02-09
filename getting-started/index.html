@@ -469,6 +469,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/005-addressable-rgb/" class="md-nav__link">
+        005 - Addressable LED
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -567,9 +581,9 @@
 <ol>
 <li>Connect the board to a computer using a USB cable</li>
 <li>Make sure the board shows up in your computer's file system. It should show up as a removable drive (like plugging in a flash drive) and will usually be called <code>CIRCUITPY</code></li>
-<li>Open your development environment. For the Chromebooks, we're using <a href="https://urfdvw.github.io/CircuitPython-online-IDE/">URFDVW's CircuitPython Online IDE</a>. If you want to keep working with this outside of class and you have a computer with a full operating system, there are lots of other options you can use</li>
-<li>Make a software connection between the board and computer. The <a href="https://urfdvw.github.io/CircuitPython-online-IDE/">online IDE</a> won't work if you do this. To make the connection, click the <code>connect</code> button and select your board</li>
-<li>At this point, you should be able to enter the REPL or open/edit/save files on the board's internal storage</li>
+<li>Open your development environment. For the Chromebooks, we're using <a href="https://urfdvw.github.io/CircuitPython-online-IDE/">URFDVW's CircuitPython Online <abbr title="Integrated Development Environment">IDE</abbr></a>. If you want to keep working with this outside of class and you have a computer with a full operating system, there are lots of other options you can use</li>
+<li>Make a software connection between the board and computer. The <a href="https://urfdvw.github.io/CircuitPython-online-IDE/">online <abbr title="Integrated Development Environment">IDE</abbr></a> won't work if you do this. To make the connection, click the <code>connect</code> button and select your board</li>
+<li>At this point, you should be able to enter the <abbr title="Read-evaluate-print loop. An interactive way to use Python">REPL</abbr> or open/edit/save files on the board's internal storage</li>
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">About USB cables</p>
@@ -577,10 +591,10 @@
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Connected isn't always connected</p>
-<p>If you disconnect your board (or put it into boot mode), it will disconnect from the online IDE, but the button in the IDE will still show <code>connected</code> because it doesn't check on its own. If you run into this problem, refresh the page and redo step 4</p>
+<p>If you disconnect your board (or put it into boot mode), it will disconnect from the online <abbr title="Integrated Development Environment">IDE</abbr>, but the button in the <abbr title="Integrated Development Environment">IDE</abbr> will still show <code>connected</code> because it doesn't check on its own. If you run into this problem, refresh the page and redo step 4</p>
 </div>
-<h2 id="interactive-programming-with-the-repl">Interactive Programming with the REPL</h2>
-<p>For this, you'll be working in the serial console. It's the right side of the <a href="https://urfdvw.github.io/CircuitPython-online-IDE/">online IDE</a></p>
+<h2 id="interactive-programming-with-the-repl">Interactive Programming with the <abbr title="Read-evaluate-print loop. An interactive way to use Python">REPL</abbr></h2>
+<p>For this, you'll be working in the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr>. It's the right side of the <a href="https://urfdvw.github.io/CircuitPython-online-IDE/">online <abbr title="Integrated Development Environment">IDE</abbr></a></p>
 <p>As soon as the board starts up, it will run the <code>code.py</code> or <code>main.py</code> file saved on it (if present). After the code is finished running, you <em>should</em> see an output similar to what's below. If you don't, take a look at the box below that for more information about what's happening!</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
@@ -593,10 +607,10 @@
 </td></tr></table>
 <div class="admonition question">
 <p class="admonition-title">Help, I don't see that!</p>
-<p>Remember how I said that the board will immediately start running the code that's saved on it? The serial console will only be ready for you to load the REPL after the code finishes running, but sometimes you'll have code on your board that has an infinite loop. If that happens, the code will never stop running so it'll never get to that point. You can spot this happening if your code is constantly showing you some output (either printing or doing something on the board itself), or even if the board is connected but you don't see anything - sometimes the code will be doing things you can't see!</p>
+<p>Remember how I said that the board will immediately start running the code that's saved on it? The <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr> will only be ready for you to load the <abbr title="Read-evaluate-print loop. An interactive way to use Python">REPL</abbr> after the code finishes running, but sometimes you'll have code on your board that has an infinite loop. If that happens, the code will never stop running so it'll never get to that point. You can spot this happening if your code is constantly showing you some output (either printing or doing something on the board itself), or even if the board is connected but you don't see anything - sometimes the code will be doing things you can't see!</p>
 <p>If this happens to you, force stop the board and you should get the lines above so you can continue on with these directions</p>
 </div>
-<p>At this point, you can click in the Command Window and press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to open up the REPL. If you're successful, you'll see something similar to the lines below. Your version of CircuitPython and your board may be different from mine, but the <code>&gt;&gt;&gt;</code> is called the command prompt, and it shows that you are in (Circuit)Python and the board is waiting for you to give an input. </p>
+<p>At this point, you can click in the Command Window and press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to open up the <abbr title="Read-evaluate-print loop. An interactive way to use Python">REPL</abbr>. If you're successful, you'll see something similar to the lines below. Your version of CircuitPython and your board may be different from mine, but the <code>&gt;&gt;&gt;</code> is called the command prompt, and it shows that you are in (Circuit)Python and the board is waiting for you to give an input. </p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>Adafruit CircuitPython 7.1.1 on 2022-01-14; Adafruit ItsyBitsy M0 Express with samd21g18
 <a id="__codelineno-1-2" name="__codelineno-1-2"></a>&gt;&gt;&gt; 
@@ -604,7 +618,7 @@
 </td></tr></table>
 <p>To make sure everything's working, do that now! I like to type a math expression like <code>5 * 3</code> into the command window and press <span class="keys"><kbd class="key-enter">Enter</kbd></span>, which should output <code>15</code></p>
 <h2 id="opening-editing-saving-and-running-py-files">Opening, Editing, Saving, and Running .py Files</h2>
-<p>With your board connected to the Online IDE, click the <code>Open</code> button and select your file.</p>
+<p>With your board connected to the Online <abbr title="Integrated Development Environment">IDE</abbr>, click the <code>Open</code> button and select your file.</p>
 <p>Now you can edit the file in the Editor window. Each time you click <code>Save and Run</code>, your code will be saved and the board will restart and run the code.</p>
 <p>Don't forget to use <code>Save As</code> before class ends to save a copy to your computer!</p>
 
@@ -672,7 +686,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.22074ed6.min.js"}</script>
     
     
       <script src="../assets/javascripts/bundle.960e086b.min.js"></script>

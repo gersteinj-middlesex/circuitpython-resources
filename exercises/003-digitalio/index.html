@@ -506,6 +506,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../005-addressable-rgb/" class="md-nav__link">
+        005 - Addressable LED
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -700,7 +714,7 @@ This imports modules for working with the board, working with digital inputs and
 </code></pre></div>
 </td></tr></table>
 <p><strong>What you should see:</strong>
-The board should reboot, run the code, and print out a message that it's done running. In the serial console, you should see it print either <code>True</code> or <code>False</code>. Make sure you don't have any errors. Nothing will light up yet.</p>
+The board should reboot, run the code, and print out a message that it's done running. In the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr>, you should see it print either <code>True</code> or <code>False</code>. Make sure you don't have any errors. Nothing will light up yet.</p>
 <p><strong>What this does:</strong>
 The comments explain this too, but here you go:
 - The first new line of code creates a DigitalIO object. We have to tell it what pin we're using, but instead of giving it a pin number (which we could do, but will vary between boards), we tell it to go look up the definition in the <code>board</code> module and use whatever pin the built in LED is attached to
@@ -746,7 +760,7 @@ The comments explain this too, but here you go:
 </code></pre></div>
 </td></tr></table>
 <p><strong>What you should see:</strong>
-In the serial console, you should see it print either <code>True</code> or <code>False</code>, and then on the next line, it should print <code>True</code>, which is the value we assigned to led.value. Make sure you don't have any errors. You won't see anything lighting up, though!</p>
+In the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr>, you should see it print either <code>True</code> or <code>False</code>, and then on the next line, it should print <code>True</code>, which is the value we assigned to led.value. Make sure you don't have any errors. You won't see anything lighting up, though!</p>
 <p><strong>What this does:</strong>
 We set the LED's value to True to turn it on</p>
 <div class="admonition question">
@@ -797,7 +811,7 @@ We set the LED's value to True to turn it on</p>
 </code></pre></div>
 </td></tr></table>
 <p><strong>What you should see:</strong>
-In the serial console, you should see it print either <code>True</code> or <code>False</code>, and then on the next line, it should print <code>True</code>, which is the value we assigned to led.value. Make sure you don't have any errors. You should also see the LED light up for 5 seconds!</p>
+In the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr>, you should see it print either <code>True</code> or <code>False</code>, and then on the next line, it should print <code>True</code>, which is the value we assigned to led.value. Make sure you don't have any errors. You should also see the LED light up for 5 seconds!</p>
 <p><strong>What this does:</strong>
 We told the board to pause for 5 seconds after turning the LED on</p>
 <div class="admonition question">
@@ -811,7 +825,7 @@ We told the board to pause for 5 seconds after turning the LED on</p>
 <li>4.5 points: You made your LED change at least twice</li>
 <li>4 points: Your LED turns on</li>
 <li>3 points: You set up your LED but it doesn't turn on</li>
-<li>0 points: You didn't get a meaningful amount of htis code completed</li>
+<li>0 points: You didn't get a meaningful amount of this code completed</li>
 </ul>
 
               
@@ -878,7 +892,7 @@ We told the board to pause for 5 seconds after turning the LED on</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.22074ed6.min.js"}</script>
     
     
       <script src="../../assets/javascripts/bundle.960e086b.min.js"></script>
