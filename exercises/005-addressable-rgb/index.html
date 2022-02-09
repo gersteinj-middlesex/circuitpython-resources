@@ -586,6 +586,7 @@
 <li>Connect your board to the computer and open the <code>main.py</code> file. Please make sure you're opening the one on your board, not a copy saved on your computer! See <a href="../../getting-started/">getting started</a> for help with this step. </li>
 <li>We'll be running code from a python file today</li>
 <li>To make sure you're working with the correct file, add a print function to your code (for instance, <code>print("It's time to play with LEDs")</code>) and make sure it runs</li>
+<li>After you've done that, please copy and paste the sample code below to your <code>main.py</code> file</li>
 </ul>
 <h2 id="concepts-vocabulary">Concepts &amp; Vocabulary</h2>
 <ul>
@@ -618,8 +619,8 @@
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">import</span> <span class="nn">board</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4"></a>
 <a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># For Trinket M0, Gemma M0, ItsyBitsy M0 Express, and ItsyBitsy M4 Express # (1)</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="kn">import</span> <span class="nn">adafruit_dotstar</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="n">led</span> <span class="o">=</span> <span class="n">adafruit_dotstar</span><span class="o">.</span><span class="n">DotStar</span><span class="p">(</span><span class="n">board</span><span class="o">.</span><span class="n">APA102_SCK</span><span class="p">,</span> <span class="n">board</span><span class="o">.</span><span class="n">APA102_MOSI</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="c1"># import adafruit_dotstar</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c1"># led = adafruit_dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1)</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="c1"># For Feather M0 Express, Metro M0 Express, Metro M4 Express, Circuit Playground Express, QT Py M0</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="c1"># import neopixel</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="c1"># led = neopixel.NeoPixel(board.NEOPIXEL, 1)</span>
