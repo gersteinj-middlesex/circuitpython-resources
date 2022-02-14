@@ -230,11 +230,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#every-time-you-use-the-board" class="md-nav__link">
-    Every Time You Use The Board
+  <a href="#daily-setup-checklist" class="md-nav__link">
+    Daily Setup Checklist
   </a>
   
-    <nav class="md-nav" aria-label="Every Time You Use The Board">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailed-board-setup" class="md-nav__link">
+    Detailed Board Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Detailed Board Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -286,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../board/" class="md-nav__link">
+      <a href="../troubleshooting/" class="md-nav__link">
         Troubleshooting
       </a>
     </li>
@@ -516,11 +523,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#every-time-you-use-the-board" class="md-nav__link">
-    Every Time You Use The Board
+  <a href="#daily-setup-checklist" class="md-nav__link">
+    Daily Setup Checklist
   </a>
   
-    <nav class="md-nav" aria-label="Every Time You Use The Board">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailed-board-setup" class="md-nav__link">
+    Detailed Board Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Detailed Board Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -570,7 +584,29 @@
                 
 
 <h1 id="getting-started">Getting Started</h1>
-<h2 id="every-time-you-use-the-board">Every Time You Use The Board</h2>
+<h2 id="daily-setup-checklist">Daily Setup Checklist</h2>
+<p>Create by request of a student who had trouble remembering the process. The checkboxes are clickable so you can keep track of what you've done.</p>
+<ol class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Get a board</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Connect board to your computer with USB cable</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Navigate to the <a href="https://urfdvw.github.io/CircuitPython-online-IDE/">online <abbr title="Integrated Development Environment">IDE</abbr></a>. If it's already open from another day, refresh your browser tab to ensure it can connect to the board</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Click the <code>connect</code> button and choose your board</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> From here, you should be able to use the <abbr title="Read-evaluate-print loop. An interactive way to use Python">REPL</abbr> or run a program on your board</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> To connect to the <abbr title="Read-evaluate-print loop. An interactive way to use Python">REPL</abbr>, assuming you see the following, you can click in the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr> and press <span class="keys"><kbd class="key-enter">Enter</kbd></span>:</li>
+</ol>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="go">*******************************************</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="go">Auto-reload is on. Simply save files over USB to run them or enter REPL to disable.</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="go">Press any key to enter the REPL. Use CTRL-D to reload.</span>
+</code></pre></div>
+</td></tr></table>
+<ol class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> To edit a python file, remember to click the <code>open</code> button, and make sure you open the <code>main.py</code> (or <code>code.py</code>) file that's on the drive called <code>CIRCUITPY</code>. If the file is on your computer, it won't work!</li>
+</ol>
+<h2 id="detailed-board-setup">Detailed Board Setup</h2>
 <h3 id="what-you-need">What You Need</h3>
 <ul>
 <li>A development board. For right now, we're using the Adafruit ItsyBity M0 Express, but there are lots of options</li>
@@ -596,13 +632,13 @@
 <h2 id="interactive-programming-with-the-repl">Interactive Programming with the <abbr title="Read-evaluate-print loop. An interactive way to use Python">REPL</abbr></h2>
 <p>For this, you'll be working in the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr>. It's the right side of the <a href="https://urfdvw.github.io/CircuitPython-online-IDE/">online <abbr title="Integrated Development Environment">IDE</abbr></a></p>
 <p>As soon as the board starts up, it will run the <code>code.py</code> or <code>main.py</code> file saved on it (if present). After the code is finished running, you <em>should</em> see an output similar to what's below. If you don't, take a look at the box below that for more information about what's happening!</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>*******************************************
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>Auto-reload is on. Simply save files over USB to run them or enter REPL to disable.
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a>Press any key to enter the REPL. Use CTRL-D to reload.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="go">*******************************************</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="go">Auto-reload is on. Simply save files over USB to run them or enter REPL to disable.</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="go">Press any key to enter the REPL. Use CTRL-D to reload.</span>
 </code></pre></div>
 </td></tr></table>
 <div class="admonition question">
@@ -611,9 +647,9 @@
 <p>If this happens to you, force stop the board and you should get the lines above so you can continue on with these directions</p>
 </div>
 <p>At this point, you can click in the Command Window and press <span class="keys"><kbd class="key-enter">Enter</kbd></span> to open up the <abbr title="Read-evaluate-print loop. An interactive way to use Python">REPL</abbr>. If you're successful, you'll see something similar to the lines below. Your version of CircuitPython and your board may be different from mine, but the <code>&gt;&gt;&gt;</code> is called the command prompt, and it shows that you are in (Circuit)Python and the board is waiting for you to give an input. </p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>Adafruit CircuitPython 7.1.1 on 2022-01-14; Adafruit ItsyBitsy M0 Express with samd21g18
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a>&gt;&gt;&gt; 
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="go">Adafruit CircuitPython 7.1.1 on 2022-01-14; Adafruit ItsyBitsy M0 Express with samd21g18</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="gp">&gt;&gt;&gt; </span>
 </code></pre></div>
 </td></tr></table>
 <p>To make sure everything's working, do that now! I like to type a math expression like <code>5 * 3</code> into the command window and press <span class="keys"><kbd class="key-enter">Enter</kbd></span>, which should output <code>15</code></p>
@@ -650,7 +686,7 @@
       
       
         
-        <a href="../board/" class="md-footer__link md-footer__link--next" aria-label="Next: Troubleshooting" rel="next">
+        <a href="../troubleshooting/" class="md-footer__link md-footer__link--next" aria-label="Next: Troubleshooting" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
