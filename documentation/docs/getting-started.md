@@ -1,6 +1,26 @@
 # Getting Started
 
-## Every Time You Use The Board
+## Daily Setup Checklist
+
+Create by request of a student who had trouble remembering the process. The checkboxes are clickable so you can keep track of what you've done.
+
+1. [ ] Get a board
+2. [ ] Connect board to your computer with USB cable
+3. [ ] Navigate to the [online IDE](https://urfdvw.github.io/CircuitPython-online-IDE/). If it's already open from another day, refresh your browser tab to ensure it can connect to the board
+4. [ ] Click the `connect` button and choose your board
+5. [ ] From here, you should be able to use the REPL or run a program on your board
+6. [ ] To connect to the REPL, assuming you see the following, you can click in the serial console and press ++enter++:
+
+```pycon
+*******************************************
+Auto-reload is on. Simply save files over USB to run them or enter REPL to disable.
+
+Press any key to enter the REPL. Use CTRL-D to reload.
+```
+
+7. [ ] To edit a python file, remember to click the `open` button, and make sure you open the `main.py` (or `code.py`) file that's on the drive called `CIRCUITPY`. If the file is on your computer, it won't work!
+
+## Detailed Board Setup
 
 ### What You Need
 - A development board. For right now, we're using the Adafruit ItsyBity M0 Express, but there are lots of options
@@ -26,7 +46,7 @@ For this, you'll be working in the serial console. It's the right side of the [o
 
 As soon as the board starts up, it will run the `code.py` or `main.py` file saved on it (if present). After the code is finished running, you *should* see an output similar to what's below. If you don't, take a look at the box below that for more information about what's happening!
 
-```
+```pycon
 *******************************************
 Auto-reload is on. Simply save files over USB to run them or enter REPL to disable.
 
@@ -41,9 +61,7 @@ Press any key to enter the REPL. Use CTRL-D to reload.
 At this point, you can click in the Command Window and press ++enter++ to open up the REPL. If you're successful, you'll see something similar to the lines below. Your version of CircuitPython and your board may be different from mine, but the `>>>` is called the command prompt, and it shows that you are in (Circuit)Python and the board is waiting for you to give an input. 
 
 
-```
-
-
+```pycon
 Adafruit CircuitPython 7.1.1 on 2022-01-14; Adafruit ItsyBitsy M0 Express with samd21g18
 >>> 
 ```

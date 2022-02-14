@@ -2,7 +2,7 @@ site_name: Physical Computing Resources
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
-  - Troubleshooting: board.md
+  - Troubleshooting: troubleshooting.md
   - Development Environment: ide.md
   - Links: more-resources.md
   - Quick Reference:
@@ -25,13 +25,12 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.keys
-  # - pymdownx.emoji:
-  #     emoji_index: !!python/name:materialx.emoji.twemoji
-  #     emoji_generator: !!python/name:materialx.emoji.to_svg
   - abbr
   - pymdownx.snippets
-  # - attr_list
   - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
   - pymdownx.highlight:
       linenums: true
       anchor_linenums: true
