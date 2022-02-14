@@ -482,6 +482,33 @@
     Defining Colors
   </a>
   
+    <nav class="md-nav" aria-label="Defining Colors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-the-neopixel-and-dotstar-modules-read-colors" class="md-nav__link">
+    How the NeoPixel and DotStar modules read colors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    Constants
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why" class="md-nav__link">
+    Why?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -571,6 +598,33 @@
   <a href="#defining-colors" class="md-nav__link">
     Defining Colors
   </a>
+  
+    <nav class="md-nav" aria-label="Defining Colors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-the-neopixel-and-dotstar-modules-read-colors" class="md-nav__link">
+    How the NeoPixel and DotStar modules read colors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    Constants
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why" class="md-nav__link">
+    Why?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -669,6 +723,9 @@
 </ol>
 <h2 id="defining-colors">Defining Colors</h2>
 <p>For today's exercise, you're going to need to make a pattern of <em>at least</em> 5 colors. That's going to start getting hard to read, though, so let's look at how we can improve this a bit.</p>
+<h3 id="how-the-neopixel-and-dotstar-modules-read-colors">How the NeoPixel and DotStar modules read colors</h3>
+<p>When working with these two modules, you will always give colors as a set of RGB values, but you <em>also</em> need to make them a single value. That's where tuples come in! A tuple is a lot like a list, in that it is a single value that has multiple values inside it. The difference is that unlike a list, it can't be changed once it's created. It looks like <code>(255, 0, 0)</code> (the spaces in between the comma and number are optional). You can also use hex values, which look like <code>#ff0000</code>. Either way, the range you'll use is 0-255 (or the hexadecimal equivalent if you're using hex values, which would be <code>#00</code> to <code>#ff</code>). You can use a <a href="https://g.co/kgs/W1QAdB">color picker</a> to figure out what values you want for a color, although you may have to tweak them to get them to look right on the LED.</p>
+<h3 id="constants">Constants</h3>
 <p>You already know about variables. For instance, <code>a = 5</code> is an assignment statement that assigns the value <code>5</code> to the variable <code>a</code>. After that, you can use a to represent the value assigned to it. You can also modify the value assigned to a. For instance:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
@@ -735,8 +792,90 @@
 <a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="go">Press any key to enter the REPL. Use CTRL-D to reload.</span>
 </code></pre></div>
 </td></tr></table>
+<p>In some languages, you can define a variable that isn't allowed to change, and this is called a <em>constant</em>. You probably know constants from math or science classes. For instance: pi or the speed of light are known values that we can refer to by a name, but they don't change. This can be useful in your code too. If you wanted to define what "red" is, you might create a constant because the value of red shouldn't be changing while the program runs.</p>
+<p>In Python, you can't create a true constant, but the convention in Python is to make the name of a variable that is being used as a constant in ALL CAPS.</p>
+<p>For instance, you might have a color defined like this:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">RED</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="why">Why?</h3>
+<p>It's going to start getting hard to maintain your code if you're writing the colors in manually every time you need them, especially when we start doing some longer examples. Using variables to represent colors will make your life easier, and will also help you get ready to work with lists of colors and fading between colors</p>
 <h2 id="try-it">Try It</h2>
-<p>Modify the code above to change the pattern of colors it shows</p>
+<p>Modify the sample code below so it works. You'll need to define variables/constants for colors. You may change the patern of colors it shows. Don't forget to uncomment the right section of code for your particular board! If you want to change the pattern it's showing, that's fine</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span>
+<span class="normal"><a href="#__codelineno-4-13">13</a></span>
+<span class="normal"><a href="#__codelineno-4-14">14</a></span>
+<span class="normal"><a href="#__codelineno-4-15">15</a></span>
+<span class="normal"><a href="#__codelineno-4-16">16</a></span>
+<span class="normal"><a href="#__codelineno-4-17">17</a></span>
+<span class="normal"><a href="#__codelineno-4-18">18</a></span>
+<span class="normal"><a href="#__codelineno-4-19">19</a></span>
+<span class="normal"><a href="#__codelineno-4-20">20</a></span>
+<span class="normal"><a href="#__codelineno-4-21">21</a></span>
+<span class="normal"><a href="#__codelineno-4-22">22</a></span>
+<span class="normal"><a href="#__codelineno-4-23">23</a></span>
+<span class="normal"><a href="#__codelineno-4-24">24</a></span>
+<span class="normal"><a href="#__codelineno-4-25">25</a></span>
+<span class="normal"><a href="#__codelineno-4-26">26</a></span>
+<span class="normal"><a href="#__codelineno-4-27">27</a></span>
+<span class="normal"><a href="#__codelineno-4-28">28</a></span>
+<span class="normal"><a href="#__codelineno-4-29">29</a></span>
+<span class="normal"><a href="#__codelineno-4-30">30</a></span>
+<span class="normal"><a href="#__codelineno-4-31">31</a></span>
+<span class="normal"><a href="#__codelineno-4-32">32</a></span>
+<span class="normal"><a href="#__codelineno-4-33">33</a></span>
+<span class="normal"><a href="#__codelineno-4-34">34</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kn">import</span> <span class="nn">time</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="kn">import</span> <span class="nn">board</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="c1"># For Trinket M0, Gemma M0, ItsyBitsy M0 Express, and ItsyBitsy M4 Express # (1)</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="c1"># import adafruit_dotstar</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="c1"># led = adafruit_dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1)</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="c1"># For Feather M0 Express, Metro M0 Express, Metro M4 Express, Circuit Playground Express, QT Py M0</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="c1"># import neopixel</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="c1"># led = neopixel.NeoPixel(board.NEOPIXEL, 1)</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="n">led</span><span class="o">.</span><span class="n">brightness</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="c1">#(2)</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a>
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="c1"># Define your colors #(3)</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="c1"># Don&#39;t forget to define variables for the colors! This would be a good place to do that.</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15"></a>
+<a id="__codelineno-4-16" name="__codelineno-4-16"></a>
+<a id="__codelineno-4-17" name="__codelineno-4-17"></a>
+<a id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="c1"># Have you defined your colors yet?</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19"></a>
+<a id="__codelineno-4-20" name="__codelineno-4-20"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span> 
+<a id="__codelineno-4-21" name="__codelineno-4-21"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">RED</span> 
+<a id="__codelineno-4-22" name="__codelineno-4-22"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">ORANGE</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">YELLOW</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">GREEN</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">BLUE</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-4-31" name="__codelineno-4-31"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">PURPLE</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">PINK</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<ol>
+<li>You're going to need to comment out one of the two pairs of lines here, depending on which board you have</li>
+<li>You can set this to any value from 0 to 1. Try other values!</li>
+<li>Remember you can define them just like any other variable. See above for an example</li>
+</ol>
 <h2 id="show-me-your-code-in-action">Show me your code in action</h2>
 <p>Today, I'm just checking for completion. You'll have another assignment to show me more advanced usage</p>
 
