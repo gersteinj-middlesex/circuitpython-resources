@@ -13,7 +13,7 @@
     
     
       
-        <title>004 - Blink Pattern - Physical Computing Resources</title>
+        <title>006 - Working with Colors - Physical Computing Resources</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercise-4-blink-pattern" class="md-skip">
+        <a href="#exercise-6-working-with-colors" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              004 - Blink Pattern
+              006 - Working with Colors
             
           </span>
         </div>
@@ -386,6 +386,34 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../004-blink-pattern/" class="md-nav__link">
+        004 - Blink Pattern
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../005-addressable-rgb/" class="md-nav__link">
+        005 - Addressable LED
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -398,12 +426,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          004 - Blink Pattern
+          006 - Working with Colors
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        004 - Blink Pattern
+        006 - Working with Colors
       </a>
       
         
@@ -443,15 +471,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#new-programming-syntax" class="md-nav__link">
-    New Programming Syntax
+  <a href="#test-code" class="md-nav__link">
+    Test Code
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#background-info" class="md-nav__link">
-    Background Info
+  <a href="#defining-colors" class="md-nav__link">
+    Defining Colors
   </a>
   
 </li>
@@ -474,34 +502,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../005-addressable-rgb/" class="md-nav__link">
-        005 - Addressable LED
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../006-colors/" class="md-nav__link">
-        006 - Working with Colors
-      </a>
     </li>
   
 
@@ -561,15 +561,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#new-programming-syntax" class="md-nav__link">
-    New Programming Syntax
+  <a href="#test-code" class="md-nav__link">
+    Test Code
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#background-info" class="md-nav__link">
-    Background Info
+  <a href="#defining-colors" class="md-nav__link">
+    Defining Colors
   </a>
   
 </li>
@@ -601,27 +601,28 @@
               
                 
 
-<h1 id="exercise-4-blink-pattern">Exercise 4 - Blink Pattern</h1>
+<h1 id="exercise-6-working-with-colors">Exercise 6 - Working With Colors</h1>
 <h2 id="goals">Goals</h2>
 <ul>
-<li>Work with the digitalio library</li>
-<li>Utilize digital outputs to control an LED</li>
-<li>Utilize loops to accomplish repetitive tasks</li>
+<li>Work with the dotstar or neopixel library</li>
+<li>Work with more complex data types</li>
+<li>Create variables/constants to make code more managable</li>
+<li>Work with RGB Color</li>
 </ul>
 <h2 id="preparation">Preparation</h2>
 <ul>
-<li>Connect your board to the computer and open the <code>code.py</code> or <code>main.py</code> file. Whichever one you have is fine but I'll be referring to it as <code>code.py</code>. Delete any pre-existing code from the board. See <a href="../../getting-started/">getting started</a> for help with this step.</li>
+<li>Connect your board to the computer and open the <code>main.py</code> file. Please make sure you're opening the one on your board, not a copy saved on your computer! See <a href="../../getting-started/">getting started</a> for help with this step. </li>
 <li>We'll be running code from a python file today</li>
+<li>Please start off by configuring and running the test code below to check that you have red-green-blue flashing lights</li>
 </ul>
 <h2 id="concepts-vocabulary">Concepts &amp; Vocabulary</h2>
 <ul>
-<li>for loop</li>
-<li>while loop</li>
-<li>setup</li>
-<li><code>range()</code></li>
+<li>tuple</li>
+<li>RGB color</li>
+<li>constants</li>
 </ul>
-<h2 id="new-programming-syntax">New Programming Syntax</h2>
-<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<h2 id="test-code">Test Code</h2>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
@@ -631,57 +632,113 @@
 <span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
 <span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># range(max)</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1"># outputs a range of numbers =&gt; 0, 1, 2, 3, 4</span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="sd">&quot;&quot;&quot;CircuitPython Essentials Internal RGB LED red, green, blue example&quot;&quot;&quot;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">time</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">import</span> <span class="nn">board</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># range(min, max)</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c1"># outputs a range of numbers =&gt; -3, -2, -1, 0, 1, 2</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="c1"># range(min, max, step)</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">200</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="c1"># outputs (returns) a range of numbers =&gt; -200, -150, -100, -50, 0, 50</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># For Trinket M0, Gemma M0, ItsyBitsy M0 Express, and ItsyBitsy M4 Express # (1)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="c1"># import adafruit_dotstar</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c1"># led = adafruit_dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1)</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="c1"># For Feather M0 Express, Metro M0 Express, Metro M4 Express, Circuit Playground Express, QT Py M0</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="c1"># import neopixel</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="c1"># led = neopixel.NeoPixel(board.NEOPIXEL, 1)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="n">led</span><span class="o">.</span><span class="n">brightness</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="c1">#(2)</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span> 
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-The range function is used to generate a series of numbers, and is often combined with a for loop</p>
-<p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span>
-<span class="normal"><a href="#__codelineno-1-6">6</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># for loops will repeat a set number of times, or for a set of objects</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>    <span class="c1"># inside the loop, we have a variable called n</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a>    <span class="c1"># n is going to be assigned 0 at first, then 1 on the next loop, and so on until 4</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a>    <span class="c1"># after n = 4, the loop will not continue running, because we&#39;ve reached the end of the range</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<ol>
+<li>You're going to need to comment out one of the two pairs of lines here, depending on which board you have</li>
+<li>You can set this to any value from 0 to 1. Try other values!</li>
+</ol>
+<h2 id="defining-colors">Defining Colors</h2>
+<p>For today's exercise, you're going to need to make a pattern of <em>at least</em> 5 colors. That's going to start getting hard to read, though, so let's look at how we can improve this a bit.</p>
+<p>You already know about variables. For instance, <code>a = 5</code> is an assignment statement that assigns the value <code>5</code> to the variable <code>a</code>. After that, you can use a to represent the value assigned to it. You can also modify the value assigned to a. For instance:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">6</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a is:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;b is:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;c is:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">7</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a is:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;b is:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;c is:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
-The for loop above will print the following in the <abbr title="A window that allows you to communicate directly with the board by sending inputs and viewing outputs">serial console</abbr>:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>0
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a>1
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a>2
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a>3
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a>4
+<p>When run in CircuitPython, the code above should produce:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="go">soft reboot</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="go">Auto-reload is on. Simply save files over USB to run them or enter REPL to disable.</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="go">code.py output:</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="go">a is: 5</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="go">b is: 6</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="go">c is: 11</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="go">5 + 6 = 11</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="go">a is: 7</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="go">b is: 6</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="go">c is: 11</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="go">7 + 6 = 11</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="go">Code done running.</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a>
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="go">Press any key to enter the REPL. Use CTRL-D to reload.</span>
 </code></pre></div>
 </td></tr></table>
-<h2 id="background-info">Background Info</h2>
-<p>For this one, we're going to create a blinking pattern. Using the for loop we covered in class, create a pattern of blinking lights that changes over time. For instance, you might have it turn on for 1 second, then 2 seconds, then 3 seconds, and so on.</p>
 <h2 id="try-it">Try It</h2>
-<p>All of the code you need for this comes from exercise 3 and from the for loops above. We'll go over it in class too.</p>
+<p>Modify the code above to change the pattern of colors it shows</p>
 <h2 id="show-me-your-code-in-action">Show me your code in action</h2>
-<p>Total of 5 points</p>
-<ul>
-<li>5 points: You created a for loop to blink in a pattern utilizing the variable that controls the loop</li>
-<li>4 points: You created a for loop to blink your LED, but didn't utilize the variable</li>
-<li>3 points: You set up your LED but didn't blink it</li>
-<li>0 points: You didn't get a meaningful amount of this code completed</li>
-</ul>
+<p>Today, I'm just checking for completion. You'll have another assignment to show me more advanced usage</p>
 
               
             </article>
@@ -695,7 +752,7 @@ The for loop above will print the following in the <abbr title="A window that al
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../003-digitalio/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 003 - DigitalIO" rel="prev">
+        <a href="../005-addressable-rgb/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 005 - Addressable LED" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -704,26 +761,11 @@ The for loop above will print the following in the <abbr title="A window that al
               <span class="md-footer__direction">
                 Previous
               </span>
-              003 - DigitalIO
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../005-addressable-rgb/" class="md-footer__link md-footer__link--next" aria-label="Next: 005 - Addressable LED" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
               005 - Addressable LED
             </div>
           </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
         </a>
+      
       
     </nav>
   
