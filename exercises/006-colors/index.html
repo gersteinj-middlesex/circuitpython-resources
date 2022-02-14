@@ -695,7 +695,9 @@
 <span class="normal"><a href="#__codelineno-0-17">17</a></span>
 <span class="normal"><a href="#__codelineno-0-18">18</a></span>
 <span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="sd">&quot;&quot;&quot;CircuitPython Essentials Internal RGB LED red, green, blue example&quot;&quot;&quot;</span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="sd">&quot;&quot;&quot;CircuitPython Essentials Internal RGB LED red, green, blue example&quot;&quot;&quot;</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">time</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">import</span> <span class="nn">board</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4"></a>
@@ -708,13 +710,15 @@
 <a id="__codelineno-0-11" name="__codelineno-0-11"></a>
 <a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="n">led</span><span class="o">.</span><span class="n">brightness</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="c1">#(2)</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13"></a>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span> 
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="c1">#### Everything above this line is setup code that won&#39;t change when you do the assignment below ####</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span> 
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> 
 <a id="__codelineno-0-18" name="__codelineno-0-18"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 <a id="__codelineno-0-20" name="__codelineno-0-20"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 <ol>
@@ -835,7 +839,10 @@
 <span class="normal"><a href="#__codelineno-4-31">31</a></span>
 <span class="normal"><a href="#__codelineno-4-32">32</a></span>
 <span class="normal"><a href="#__codelineno-4-33">33</a></span>
-<span class="normal"><a href="#__codelineno-4-34">34</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kn">import</span> <span class="nn">time</span>
+<span class="normal"><a href="#__codelineno-4-34">34</a></span>
+<span class="normal"><a href="#__codelineno-4-35">35</a></span>
+<span class="normal"><a href="#__codelineno-4-36">36</a></span>
+<span class="normal"><a href="#__codelineno-4-37">37</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kn">import</span> <span class="nn">time</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="kn">import</span> <span class="nn">board</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3"></a>
 <a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="c1"># For Trinket M0, Gemma M0, ItsyBitsy M0 Express, and ItsyBitsy M4 Express # (1)</span>
@@ -847,28 +854,31 @@
 <a id="__codelineno-4-10" name="__codelineno-4-10"></a>
 <a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="n">led</span><span class="o">.</span><span class="n">brightness</span> <span class="o">=</span> <span class="mf">0.3</span> <span class="c1">#(2)</span>
 <a id="__codelineno-4-12" name="__codelineno-4-12"></a>
-<a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="c1"># Define your colors #(3)</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="c1"># Don&#39;t forget to define variables for the colors! This would be a good place to do that.</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="c1">#### Everything above this line is setup code that works exactly the same as the test code ####</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="c1">#### You can just copy and paste the code below this line to replace the loop in the test code ####</span>
 <a id="__codelineno-4-15" name="__codelineno-4-15"></a>
-<a id="__codelineno-4-16" name="__codelineno-4-16"></a>
-<a id="__codelineno-4-17" name="__codelineno-4-17"></a>
-<a id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="c1"># Have you defined your colors yet?</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16"></a><span class="c1"># Define your colors #(3)</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="c1"># Don&#39;t forget to define variables for the colors! This would be a good place to do that.</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18"></a>
 <a id="__codelineno-4-19" name="__codelineno-4-19"></a>
-<a id="__codelineno-4-20" name="__codelineno-4-20"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span> 
-<a id="__codelineno-4-21" name="__codelineno-4-21"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">RED</span> 
-<a id="__codelineno-4-22" name="__codelineno-4-22"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a id="__codelineno-4-23" name="__codelineno-4-23"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">ORANGE</span>
-<a id="__codelineno-4-24" name="__codelineno-4-24"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a id="__codelineno-4-25" name="__codelineno-4-25"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">YELLOW</span>
-<a id="__codelineno-4-26" name="__codelineno-4-26"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a id="__codelineno-4-27" name="__codelineno-4-27"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">GREEN</span>
-<a id="__codelineno-4-28" name="__codelineno-4-28"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a id="__codelineno-4-29" name="__codelineno-4-29"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">BLUE</span>
-<a id="__codelineno-4-30" name="__codelineno-4-30"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a id="__codelineno-4-31" name="__codelineno-4-31"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">PURPLE</span>
-<a id="__codelineno-4-32" name="__codelineno-4-32"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a id="__codelineno-4-33" name="__codelineno-4-33"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">PINK</span>
-<a id="__codelineno-4-34" name="__codelineno-4-34"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20"></a>
+<a id="__codelineno-4-21" name="__codelineno-4-21"></a><span class="c1"># Have you defined your colors yet?</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22"></a>
+<a id="__codelineno-4-23" name="__codelineno-4-23"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span> 
+<a id="__codelineno-4-24" name="__codelineno-4-24"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">RED</span> 
+<a id="__codelineno-4-25" name="__codelineno-4-25"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">ORANGE</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">YELLOW</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">GREEN</span>
+<a id="__codelineno-4-31" name="__codelineno-4-31"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">BLUE</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">PURPLE</span>
+<a id="__codelineno-4-35" name="__codelineno-4-35"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a id="__codelineno-4-36" name="__codelineno-4-36"></a>    <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">PINK</span>
+<a id="__codelineno-4-37" name="__codelineno-4-37"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 <ol>
