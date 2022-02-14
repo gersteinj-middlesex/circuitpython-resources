@@ -32,6 +32,8 @@ import board
 
 led.brightness = 0.3 #(2)
 
+#### Everything above this line is setup code that won't change when you do the assignment below ####
+
 while True: 
     led[0] = (255, 0, 0) 
     time.sleep(0.5)
@@ -125,6 +127,9 @@ import board
 # led = neopixel.NeoPixel(board.NEOPIXEL, 1)
 
 led.brightness = 0.3 #(2)
+
+#### Everything above this line is setup code that works exactly the same as the test code ####
+#### You can just copy and paste the code below this line to replace the loop in the test code ####
 
 # Define your colors #(3)
 # Don't forget to define variables for the colors! This would be a good place to do that.
