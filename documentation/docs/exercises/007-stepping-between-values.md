@@ -1,10 +1,11 @@
-# Exercise 6 - Working With Colors
+# Exercise 7 - Stepping Between Values
 
 ## Goals
 - Work with the dotstar or neopixel library
 - Work with more complex data types
 - Create variables/constants to make code more managable
-- Work with RGB Color
+- Work with RGB color
+- Iterate through loops to change gradually from a start point to an end point
 
 ## Preparation
 - Connect your board to the computer and open the `main.py` file. Please make sure you're opening the one on your board, not a copy saved on your computer! See [getting started](../getting-started.md) for help with this step. 
@@ -12,14 +13,18 @@
 - Please start off by configuring and running the test code below to check that you have red-green-blue flashing lights
 
 ## Concepts & Vocabulary
-- tuple
-- RGB color
-- constants
+- Loops
+- Iteration
+- Interpolation
 
 ## Test Code
 
-```python
-"""CircuitPython Essentials Internal RGB LED red, green, blue example"""
+Please configure and run the test code to make sure everything is working correctly. I promise this isn't to make more work for you! We've had a lot of people run into problems like modules getting deleted by accident or editing a file on their computer instead of the one on the board, so this is a quick diagnostic exercise I'll ask you to run at the start of each class. I've also added a print function below - the purpose of this is for you to change the string inside it to something recognizable (like your name). If you don't see this line print, then this isn't the code that's running on your board!
+
+Don't forget that the [getting started](../getting-started.md) page has a checklist you can use to help you get your board set up correctly.
+
+```python title="Testing Code"
+"""Adapted from CircuitPython Essentials Internal RGB LED red, green, blue example"""
 import time
 import board
 
@@ -33,6 +38,7 @@ import board
 led.brightness = 0.3 #(2)
 
 #### Everything above this line is setup code that won't change when you do the assignment below ####
+print("CHANGE THIS TO YOUR NAME OR SOMETHING ELSE SPECIFIC TO YOU") # (3)
 
 while True: 
     led[0] = (255, 0, 0) 
@@ -46,8 +52,9 @@ while True:
 
 1.  You're going to need to comment out one of the two pairs of lines here, depending on which board you have
 2.  You can set this to any value from 0 to 1. Try other values!
+3.  Please make sure you change what this is printing! This line is a diagnostic line to make sure that the code running on your board is the code you think it is
 
-## Defining Colors
+## Stepping Between Values
 
 For today's exercise, you're going to need to make a pattern of *at least* 5 colors. That's going to start getting hard to read, though, so let's look at how we can improve this a bit.
 

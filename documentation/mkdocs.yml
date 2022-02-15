@@ -15,6 +15,7 @@ nav:
     - 004 - Blink Pattern: exercises\004-blink-pattern.md
     - 005 - Addressable LED: exercises\005-addressable-rgb.md
     - 006 - Working with Colors: exercises\006-colors.md
+    - 007 - Stepping Between Values: exercises\007-stepping-between-values.md
 theme:
   name: material
   palette:
