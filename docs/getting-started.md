@@ -4,12 +4,13 @@
 
 Create by request of a student who had trouble remembering the process. The checkboxes are clickable so you can keep track of what you've done.
 
-1. [ ] Get a board
-2. [ ] Connect board to your computer with USB cable
-3. [ ] Navigate to the [online IDE](https://urfdvw.github.io/CircuitPython-online-IDE/). If it's already open from another day, refresh your browser tab to ensure it can connect to the board
-4. [ ] Click the `connect` button and choose your board
-5. [ ] From here, you should be able to use the REPL or run a program on your board
-6. [ ] To connect to the REPL, assuming you see the following, you can click in the serial console and press ++enter++:
+- [ ] Get a board & connect it to your computer with USB cable
+- [ ] Navigate to the [online IDE](https://urfdvw.github.io/CircuitPython-online-IDE/). If it's already open from another day, refresh your browser tab to ensure it can connect to the board
+- [ ] Click the `connect` button and choose your board
+- [ ] From here, you should be able to use the REPL or run a program on your board
+- [ ] To edit a python file, remember to click the `open` button, and make sure you open the `main.py` (or `code.py`) file that's on the drive called `CIRCUITPY`. If the file is on your computer, the IDE will open it just like a file on the board, but it won't run on the board. So please be careful about what file you're opening!
+- [ ] To make sure everything is working, each exercise starts with a test file. Please make sure you run the test code *even if the board appears to be doing the same thing*. I often find that when students struggle to get their code to work, it's because the code they're editing isn't the code on the board.
+- [ ] If you need to connect to the REPL, assuming you see the same thing as in the code block below, you can click in the serial console and press ++enter++. If you don't see that, scroll down to the "Interactive Programming with the REPL" section
 
 ```pycon
 *******************************************
@@ -18,7 +19,6 @@ Auto-reload is on. Simply save files over USB to run them or enter REPL to disab
 Press any key to enter the REPL. Use CTRL-D to reload.
 ```
 
-7. [ ] To edit a python file, remember to click the `open` button, and make sure you open the `main.py` (or `code.py`) file that's on the drive called `CIRCUITPY`. If the file is on your computer, it won't work!
 
 ## Detailed Board Setup
 
