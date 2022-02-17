@@ -21,6 +21,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
 
+// from coolors
+/* SCSS HEX */
+$yale-blue: #084b83ff;
+$maximum-blue: #42bfddff;
+$powder-blue: #bbe6e4ff;
+$cultured: #f0f6f6ff;
+$hot-pink: #ff66b3ff;
+
+/* SCSS HSL */
+$yale-blue: hsla(207, 88%, 27%, 1);
+$maximum-blue: hsla(192, 70%, 56%, 1);
+$powder-blue: hsla(177, 46%, 82%, 1);
+$cultured: hsla(180, 25%, 95%, 1);
+$hot-pink: hsla(330, 100%, 70%, 1);
+
+/* SCSS RGB */
+$yale-blue: rgba(8, 75, 131, 1);
+$maximum-blue: rgba(66, 191, 221, 1);
+$powder-blue: rgba(187, 230, 228, 1);
+$cultured: rgba(240, 246, 246, 1);
+$hot-pink: rgba(255, 102, 179, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #084b83ff, #42bfddff, #bbe6e4ff, #f0f6f6ff, #ff66b3ff);
+$gradient-right: linear-gradient(90deg, #084b83ff, #42bfddff, #bbe6e4ff, #f0f6f6ff, #ff66b3ff);
+$gradient-bottom: linear-gradient(180deg, #084b83ff, #42bfddff, #bbe6e4ff, #f0f6f6ff, #ff66b3ff);
+$gradient-left: linear-gradient(270deg, #084b83ff, #42bfddff, #bbe6e4ff, #f0f6f6ff, #ff66b3ff);
+$gradient-top-right: linear-gradient(45deg, #084b83ff, #42bfddff, #bbe6e4ff, #f0f6f6ff, #ff66b3ff);
+$gradient-bottom-right: linear-gradient(135deg, #084b83ff, #42bfddff, #bbe6e4ff, #f0f6f6ff, #ff66b3ff);
+$gradient-top-left: linear-gradient(225deg, #084b83ff, #42bfddff, #bbe6e4ff, #f0f6f6ff, #ff66b3ff);
+$gradient-bottom-left: linear-gradient(315deg, #084b83ff, #42bfddff, #bbe6e4ff, #f0f6f6ff, #ff66b3ff);
+$gradient-radial: radial-gradient(#084b83ff, #42bfddff, #bbe6e4ff, #f0f6f6ff, #ff66b3ff);
+
+
 
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Lexend', sans-serif;
@@ -30,10 +64,10 @@ $headingColor: #000;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $codeFont: 'Fira Code', monospace;
-$backgroundColor: #fff;
-$linkColor: #00008B;
+$backgroundColor: $powder-blue;
+$linkColor: $yale-blue;
 $linkColorHover: lighten( $linkColor, 20% );
-$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+$selectionBackgroundColor: $hot-pink;
 
 // Change text colors against dark slide backgrounds
 @include dark-bg-text-color(#fff);
