@@ -61,7 +61,10 @@ Often, you'll need your code to be able to go smoothly from one value to another
 - With LEDs, you might want to blend smoothly from one color to another
 - If you had a robotic arm, you'd want to be able to have positions between fully closed and fully opened.
 
+## What to Do
 
+We'll do this together in class
+<!-- 
 ### Why?
 
 Will be filled in soon
@@ -72,6 +75,6 @@ Will be filled in soon
 
 ## Show me your code in action
 
-Today, I'm just checking for completion and for the ability to fade between colors
+Today, I'm just checking for completion and for the ability to fade between colors -->
 
 --8<-- "includes/glossary.md"
