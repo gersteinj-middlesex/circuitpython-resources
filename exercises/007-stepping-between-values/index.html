@@ -499,8 +499,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-do-it" class="md-nav__link">
-    How To Do It
+  <a href="#code-snippets-from-the-presentation" class="md-nav__link">
+    Code Snippets from the Presentation
   </a>
   
 </li>
@@ -596,8 +596,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-do-it" class="md-nav__link">
-    How To Do It
+  <a href="#code-snippets-from-the-presentation" class="md-nav__link">
+    Code Snippets from the Presentation
   </a>
   
 </li>
@@ -710,8 +710,75 @@
 - When you're in a car, you accelerate from stopped to going full speed, and brake gradually when you come to a stop
 - With LEDs, you might want to blend smoothly from one color to another
 - If you had a robotic arm, you'd want to be able to have positions between fully closed and fully opened.</p>
-<h2 id="how-to-do-it">How To Do It</h2>
-<p>Todo: insert slides here</p>
+<h2 id="code-snippets-from-the-presentation">Code Snippets from the Presentation</h2>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">start</span> <span class="o">=</span> <span class="mi">500</span> <span class="c1">#(1)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">end</span> <span class="o">=</span> <span class="mi">800</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="n">n</span> <span class="o">=</span> <span class="n">start</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">end</span><span class="p">:</span> <span class="c1">#(2)</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>  <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+</td></tr></table>
+<ol>
+<li>You could change these start and end values to be whatever you wanted</li>
+<li>How could you change this so you include the end value?</li>
+</ol>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">start</span> <span class="o">=</span> <span class="mi">500</span> <span class="c1">#(1)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="n">end</span> <span class="o">=</span> <span class="mi">800</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<ol>
+<li>You could change these start and end values to be whatever you wanted</li>
+</ol>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1">############ Assume all necessary setup for the internal RGB LED has been done above this line #############</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="c1">####### led refers to an object set up using the appropriate library to control the built in RGB LED ####### </span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="n">blue</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="n">magenta</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="n">red</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="c1"># fade from blue to magenta</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a>  <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a>  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">.05</span><span class="p">)</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a>
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="c1"># fade from magenta to red</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="c1"># (255, 0, 255) =&gt; (255, 0, 0)</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16"></a>  <span class="n">led</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17"></a>  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">.1</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
 <h2 id="try-it">Try It</h2>
 <p>Based on what we covered in the slides, demonstrate the ability to fade between colors. </p>
 <h2 id="show-me-your-code-in-action">Show me your code in action</h2>
