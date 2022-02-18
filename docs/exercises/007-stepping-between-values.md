@@ -112,9 +112,9 @@ Based on what we covered in the slides, demonstrate the ability to fade between 
 
 ## Show me your code in action
 
-5 points: Your RGB LED fades smoothly from `red => green => blue => red` or a pattern of similar difficulty
-4.5 points: Your RGB LED fades smoothly between at least two different colors
-4 points: Your RGB LED is able to fade smoothly at least once
-3 points: You can change colors in multiple steps, but it is not coded in a way that makes sense
+- 5 points: Your RGB LED fades smoothly from `red => green => blue => red` or a pattern of similar difficulty
+- 4.5 points: Your RGB LED fades smoothly between at least two different sets of colors
+- 4 points: Your RGB LED is able to fade smoothly at least once
+- 3 points: You can change colors in multiple steps, but it is not coded in a way that makes sense
 
 --8<-- "includes/glossary.md"
