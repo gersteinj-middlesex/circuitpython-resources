@@ -61,20 +61,19 @@ Often, you'll need your code to be able to go smoothly from one value to another
 - With LEDs, you might want to blend smoothly from one color to another
 - If you had a robotic arm, you'd want to be able to have positions between fully closed and fully opened.
 
-## What to Do
+## How To Do It
 
-We'll do this together in class
-<!-- 
-### Why?
-
-Will be filled in soon
+Todo: insert slides here
 
 ## Try It
 
-Will be filled in soon
+Based on what we covered in the slides, demonstrate the ability to fade between colors. 
 
 ## Show me your code in action
 
-Today, I'm just checking for completion and for the ability to fade between colors -->
+5 points: Your RGB LED fades smoothly from `red => green => blue => red` or a pattern of similar difficulty
+4.5 points: Your RGB LED fades smoothly between at least two different colors
+4 points: Your RGB LED is able to fade smoothly at least once
+3 points: You can change colors in multiple steps, but it is not coded in a way that makes sense
 
 --8<-- "includes/glossary.md"
