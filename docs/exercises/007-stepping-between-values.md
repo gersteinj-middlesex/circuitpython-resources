@@ -61,9 +61,50 @@ Often, you'll need your code to be able to go smoothly from one value to another
 - With LEDs, you might want to blend smoothly from one color to another
 - If you had a robotic arm, you'd want to be able to have positions between fully closed and fully opened.
 
-## How To Do It
+## Code Snippets from the Presentation
 
-Todo: insert slides here
+```python
+start = 500 #(1)
+end = 800
+
+n = start
+while n < end: #(2)
+  print(n)
+  n += 1
+```
+
+1.  You could change these start and end values to be whatever you wanted
+2.  How could you change this so you include the end value?
+
+```python
+start = 500 #(1)
+end = 800
+
+for n in range(start, end):
+  print(n)
+```
+
+1.  You could change these start and end values to be whatever you wanted
+
+```python
+############ Assume all necessary setup for the internal RGB LED has been done above this line #############
+####### led refers to an object set up using the appropriate library to control the built in RGB LED ####### 
+
+blue = (0, 0, 255)
+magenta = (255, 0, 255)
+red = (255, 0, 0)
+
+# fade from blue to magenta
+for n in range(0, 256, 1):
+  led[0] = (n, 0, 255)
+  time.sleep(.05)
+
+# fade from magenta to red
+# (255, 0, 255) => (255, 0, 0)
+for n in range(255, -1, -1):
+  led[0] = (255, 0, n)
+  time.sleep(.1)
+```
 
 ## Try It
 
