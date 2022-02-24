@@ -534,7 +534,7 @@
       
         <li class="md-nav__item">
   <a href="#code-snippets-from-the-presentation" class="md-nav__link">
-    Code Snippets from the presentation
+    Code snippets from the presentation
   </a>
   
 </li>
@@ -651,7 +651,7 @@
       
         <li class="md-nav__item">
   <a href="#code-snippets-from-the-presentation" class="md-nav__link">
-    Code Snippets from the presentation
+    Code snippets from the presentation
   </a>
   
 </li>
@@ -773,7 +773,29 @@
 <a id="__codelineno-0-28" name="__codelineno-0-28"></a>  <span class="c1"># can you use button.value to control an LED?</span>
 </code></pre></div>
 </td></tr></table>
-<h2 id="code-snippets-from-the-presentation">Code Snippets from the presentation</h2>
+<h2 id="code-snippets-from-the-presentation">Code snippets from the presentation</h2>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span>
+<span class="normal"><a href="#__codelineno-1-8">8</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1">############ assume setup already happened #############(1)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1">######## and you have a digitalio called button ########</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c1"># when button is not pushed, button.value is True</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="k">if</span> <span class="n">button</span><span class="o">.</span><span class="n">value</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span> <span class="c1">#(2)</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The button is not pushed&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="k">else</span><span class="p">:</span> <span class="c1">#(3)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The button is pushed&quot;</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<ol>
+<li>This is not the full code! There is setup that would have to happen above this. You'd also probably want the if/else section running inside of a loop</li>
+<li>This line will check if the value of <code>button.value</code> is True. If it is, the line(s) indented below it will run</li>
+<li>If the if statement runs, this is skipped. If it doesn't run, then the line(s) intended below it will run</li>
+</ol>
 <h2 id="try-it">Try It</h2>
 <p>Based on what we covered in class, demonstrate that you can use a button to control an LED</p>
 <h2 id="show-me-your-code-in-action">Show me your code in action</h2>
