@@ -16,6 +16,7 @@ nav:
     - 005 - Addressable LED: exercises\005-addressable-rgb.md
     - 006 - Working with Colors: exercises\006-colors.md
     - 007 - Stepping Between Values: exercises\007-stepping-between-values.md
+    - 008 - Digital Inputs: exercises\008-digital-inputs.md
 theme:
   name: material
   palette:
