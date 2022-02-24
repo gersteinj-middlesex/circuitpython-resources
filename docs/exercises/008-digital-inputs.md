@@ -72,7 +72,22 @@ while True:
   # can you use button.value to control an LED?
 ```
 
-## Code Snippets from the presentation
+## Code snippets from the presentation
+
+```python
+############ assume setup already happened #############(1)
+######## and you have a digitalio called button ########
+
+# when button is not pushed, button.value is True
+if button.value == True: #(2)
+  print("The button is not pushed")
+else: #(3)
+  print("The button is pushed")
+```
+
+1.  This is not the full code! There is setup that would have to happen above this. You'd also probably want the if/else section running inside of a loop
+2.  This line will check if the value of `button.value` is True. If it is, the line(s) indented below it will run
+3.  If the if statement runs, this is skipped. If it doesn't run, then the line(s) intended below it will run
 
 ## Try It
 
