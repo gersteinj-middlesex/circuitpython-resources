@@ -6,7 +6,11 @@
 - Work with additional electronic components
 
 ## Preparation
+- We're going to start out with the circuit simulator where wiring will be easier, and then we'll go back to physical circuits
 - Go to [Wokwi](https://wokwi.com/) and create a new CircuitPython project by clicking the <button style="color:white;background-color:purple;padding:.5em;border-radius:.5em;">+ More Options</button> button, then choosing `CircuitPython on Raspberry Pi Pico`
+- Find the <button style="color:white;background-color:purple;padding:.5em;border-radius:50%"> + </button> button and add a pushbutton to your circuit. It should like something like the circuit below
+
+![pi pico and pushbutton](/img/circuitsim-screenshots/button-screenshot-2.png)
 
 ## Concepts & Vocabulary
 - Digital Input
@@ -14,6 +18,24 @@
 - Class
 - Pull up resistor
 - Input Signal
+
+## Wiring
+
+### Explanation of the switch
+
+The pushbutton switch has four legs, but that's a little misleading. There's really only a pair of wires, with a gap between them. If you look at the way the legs look like they follow through the board, you can see which ones are actually connected.
+
+One of the nice things about using the simulator is that you can hover over the pins to get a hint of what they are. The wires on the pushbutton are labeled as `btn1:1.l` & `btn1:1.r` (these are connected) and `btn1:2.l` & `btn1:2.r` (these are connected). When the button is pushed down, a metal plate connects the two wires to close the circuit. You can also use `diagram.json` to change the name of the switch to something other than `btn1` if you want (see the image below) 
+
+![button connected to pi pico](/img/circuitsim-screenshots/button-screenshot-3.png)
+
+### Connecting to the board
+
+You can create wires by clicking on one component, then clicking on the second component to make the connection. Connect one leg of the button to `GND 8` on the board, and connect one of the legs not connected to that leg to `GP28` on the board.
+
+If you're feeling adventurous, you can also add an LED and connect the anode (says `A` when hovered over) to an I/O pin (I used GP0), and connect the cathode to a ground pin.
+
+![button connected to pi pico](/img/circuitsim-screenshots/button-screenshot-4.png)
 
 ## Demo Code
 
@@ -49,10 +71,6 @@ while True:
 
   # can you use button.value to control an LED?
 ```
-
-1.  You're going to need to comment out one of the two pairs of lines here, depending on which board you have
-2.  You can set this to any value from 0 to 1. Try other values!
-3.  Please make sure you change what this is printing! This line is a diagnostic line to make sure that the code running on your board is the code you think it is
 
 ## Code Snippets from the presentation
 
