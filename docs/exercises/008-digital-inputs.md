@@ -10,7 +10,7 @@
 - Go to [Wokwi](https://wokwi.com/) and create a new CircuitPython project by clicking the <button style="color:white;background-color:purple;padding:.5em;border-radius:.5em;">+ More Options</button> button, then choosing `CircuitPython on Raspberry Pi Pico`
 - Find the <button style="color:white;background-color:purple;padding:.5em;border-radius:50%"> + </button> button and add a pushbutton to your circuit. It should like something like the circuit below
 
-![pi pico and pushbutton](img/circuitsim-screenshots/button-screenshot-2.png)
+![pi pico and pushbutton](/img/circuitsim-screenshots/button-screenshot-2.png)
 
 ## Concepts & Vocabulary
 - Digital Input
@@ -27,7 +27,7 @@ The pushbutton switch has four legs, but that's a little misleading. There's rea
 
 One of the nice things about using the simulator is that you can hover over the pins to get a hint of what they are. The wires on the pushbutton are labeled as `btn1:1.l` & `btn1:1.r` (these are connected) and `btn1:2.l` & `btn1:2.r` (these are connected). When the button is pushed down, a metal plate connects the two wires to close the circuit. You can also use `diagram.json` to change the name of the switch to something other than `btn1` if you want (see the image below) 
 
-![button connected to pi pico](img/circuitsim-screenshots/button-screenshot-3.png)
+![button connected to pi pico](/img/circuitsim-screenshots/button-screenshot-3.png)
 
 ### Connecting to the board
 
@@ -35,7 +35,7 @@ You can create wires by clicking on one component, then clicking on the second c
 
 If you're feeling adventurous, you can also add an LED and connect the anode (says `A` when hovered over) to an I/O pin (I used GP0), and connect the cathode to a ground pin.
 
-![button connected to pi pico](img/circuitsim-screenshots/button-screenshot-4.png)
+![button connected to pi pico](/img/circuitsim-screenshots/button-screenshot-4.png)
 
 ## Demo Code
 

@@ -1,4 +1,5 @@
 site_name: Physical Computing Resources
+site_url: https://gersteinj-middlesex.github.io/circuitpython-resources/
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
