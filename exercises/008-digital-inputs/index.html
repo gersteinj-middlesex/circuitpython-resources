@@ -696,7 +696,7 @@
 <li>Go to <a href="https://wokwi.com/">Wokwi</a> and create a new CircuitPython project by clicking the <button style="color:white;background-color:purple;padding:.5em;border-radius:.5em;">+ More Options</button> button, then choosing <code>CircuitPython on Raspberry Pi Pico</code></li>
 <li>Find the <button style="color:white;background-color:purple;padding:.5em;border-radius:50%"> + </button> button and add a pushbutton to your circuit. It should like something like the circuit below</li>
 </ul>
-<p><img alt="pi pico and pushbutton" src="img/circuitsim-screenshots/button-screenshot-2.png" /></p>
+<p><img alt="pi pico and pushbutton" src="/img/circuitsim-screenshots/button-screenshot-2.png" /></p>
 <h2 id="concepts-vocabulary">Concepts &amp; Vocabulary</h2>
 <ul>
 <li>Digital Input</li>
@@ -709,11 +709,11 @@
 <h3 id="explanation-of-the-switch">Explanation of the switch</h3>
 <p>The pushbutton switch has four legs, but that's a little misleading. There's really only a pair of wires, with a gap between them. If you look at the way the legs look like they follow through the board, you can see which ones are actually connected.</p>
 <p>One of the nice things about using the simulator is that you can hover over the pins to get a hint of what they are. The wires on the pushbutton are labeled as <code>btn1:1.l</code> &amp; <code>btn1:1.r</code> (these are connected) and <code>btn1:2.l</code> &amp; <code>btn1:2.r</code> (these are connected). When the button is pushed down, a metal plate connects the two wires to close the circuit. You can also use <code>diagram.json</code> to change the name of the switch to something other than <code>btn1</code> if you want (see the image below) </p>
-<p><img alt="button connected to pi pico" src="img/circuitsim-screenshots/button-screenshot-3.png" /></p>
+<p><img alt="button connected to pi pico" src="/img/circuitsim-screenshots/button-screenshot-3.png" /></p>
 <h3 id="connecting-to-the-board">Connecting to the board</h3>
 <p>You can create wires by clicking on one component, then clicking on the second component to make the connection. Connect one leg of the button to <code>GND 8</code> on the board, and connect one of the legs not connected to that leg to <code>GP28</code> on the board.</p>
 <p>If you're feeling adventurous, you can also add an LED and connect the anode (says <code>A</code> when hovered over) to an I/O pin (I used GP0), and connect the cathode to a ground pin.</p>
-<p><img alt="button connected to pi pico" src="img/circuitsim-screenshots/button-screenshot-4.png" /></p>
+<p><img alt="button connected to pi pico" src="/img/circuitsim-screenshots/button-screenshot-4.png" /></p>
 <h2 id="demo-code">Demo Code</h2>
 <p>This assumes you have a button hooked up to Ground and GP28. Please note that the name of the pin is different from what you would use on the physical boards</p>
 <table class="highlighttable"><tr><th colspan="2" class="filename"><div class="highlight"><span class="filename">Demo Code</span></div></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
