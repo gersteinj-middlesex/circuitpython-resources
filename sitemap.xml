@@ -2,77 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/getting-started/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/ide/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/more-resources/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/troubleshooting/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/exercises/001-printing/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/exercises/002-imports/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/exercises/003-digitalio/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/exercises/004-blink-pattern/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/exercises/005-addressable-rgb/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/exercises/006-colors/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/exercises/007-stepping-between-values/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/exercises/008-digital-inputs/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/exercises/009-conditional-statements/</loc>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/quickref/control-structures/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://gersteinj-middlesex.github.io/circuitpython-resources/quickref/data-and-variables/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
