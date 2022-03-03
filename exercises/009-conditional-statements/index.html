@@ -549,6 +549,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#elif-statement" class="md-nav__link">
+    Elif Statement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#try-it" class="md-nav__link">
     Try It
   </a>
@@ -655,6 +662,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elif-statement" class="md-nav__link">
+    Elif Statement
+  </a>
   
 </li>
       
@@ -815,8 +829,37 @@
 <a id="__codelineno-2-6" name="__codelineno-2-6"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the button is not returning True&quot;</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
+<h2 id="elif-statement">Elif Statement</h2>
+<p>So now you can do <code>if</code> and <code>else</code>, but what if you have more than one thing to check for, like the grades example above? That's where the <code>elif</code> statement comes in.</p>
+<p>You'll always have exactly one <code>if</code> statement in a chain. You can have at most one <code>else</code>. But you can have as many or as few <code>elif</code> statements as you want. An elif statement is an <code>if</code> statement that will only be checked if the statement before it in the chain doesn't run. For example, we can fix the grades example using <code>elif</code> and <code>else</code>:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">student_score</span> <span class="o">=</span> <span class="mi">68</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="k">if</span> <span class="n">student_score</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you earned an A&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="k">elif</span> <span class="n">student_score</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you earned a B&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="k">elif</span> <span class="n">student_score</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you earned a C&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="k">elif</span> <span class="n">student_score</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">:</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you earned a D&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you failed :( &quot;</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<p>In this version, as soon as one of those statements is True, we'll print out what score the student earned, and then exit. If none were true, the student failed so that's the message we print.</p>
 <h2 id="try-it">Try It</h2>
-<p>Based on what we covered in class, demonstrate that you can use a button and a conditional statement to control an LED</p>
+<p>Based on what we covered in class and what's reviewed in this document, demonstrate that you can use a button and a conditional statement to control an LED</p>
 <h2 id="show-me-your-code-in-action">Show me your code in action</h2>
 <ul>
 <li>5 points: You successfully control an LED with a button using both <code>if</code> and <code>else</code>. This should be based on programming, not directly hooking the LED up to the button</li>
