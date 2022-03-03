@@ -106,9 +106,32 @@ else:
   print("the button is not returning True")
 ```
 
+## Elif Statement
+
+So now you can do `if` and `else`, but what if you have more than one thing to check for, like the grades example above? That's where the `elif` statement comes in.
+
+You'll always have exactly one `if` statement in a chain. You can have at most one `else`. But you can have as many or as few `elif` statements as you want. An elif statement is an `if` statement that will only be checked if the statement before it in the chain doesn't run. For example, we can fix the grades example using `elif` and `else`:
+
+```python
+student_score = 68
+
+if student_score >= 90:
+  print("you earned an A")
+elif student_score >= 80:
+  print("you earned a B")
+elif student_score >= 70:
+  print("you earned a C")
+elif student_score >= 65:
+  print("you earned a D")
+else:
+  print("you failed :( ")
+```
+
+In this version, as soon as one of those statements is True, we'll print out what score the student earned, and then exit. If none were true, the student failed so that's the message we print.
+
 ## Try It
 
-Based on what we covered in class, demonstrate that you can use a button and a conditional statement to control an LED
+Based on what we covered in class and what's reviewed in this document, demonstrate that you can use a button and a conditional statement to control an LED
 
 ## Show me your code in action
 
