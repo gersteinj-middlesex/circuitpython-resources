@@ -75,6 +75,24 @@ while True:
 ## Code snippets from the presentation
 
 ```python
+import board, time
+
+from digitalio import DigitalInOut, Direction, Pull
+
+button = DigitalInOut(board.GP28)
+button.direction = Direction.INPUT
+button.pull = Pull.UP
+
+led = DigitalInOut(board.GP0)
+led.direction = Direction.OUTPUT
+
+
+while True:
+  print(button.value)
+  led.value = # where can we get a True or False value to assign to the LED?
+```
+
+```python
 ############ assume setup already happened #############(1)
 ######## and you have a digitalio called button ########
 

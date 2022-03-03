@@ -18,6 +18,7 @@ nav:
     - 006 - Working with Colors: exercises\006-colors.md
     - 007 - Stepping Between Values: exercises\007-stepping-between-values.md
     - 008 - Digital Inputs: exercises\008-digital-inputs.md
+    - 009 - Conditional Statements: exercises\009-conditional-statements.md
 theme:
   name: material
   palette:
