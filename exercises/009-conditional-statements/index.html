@@ -515,16 +515,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conditional-statements" class="md-nav__link">
-    Conditional statements
+  <a href="#explanation-conditional-statements" class="md-nav__link">
+    Explanation - Conditional Statements
   </a>
   
-    <nav class="md-nav" aria-label="Conditional statements">
+    <nav class="md-nav" aria-label="Explanation - Conditional Statements">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#if-statement" class="md-nav__link">
     If statement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitations-of-the-if-statement" class="md-nav__link">
+    Limitations of the if statement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#else-statement" class="md-nav__link">
+    Else Statement
   </a>
   
 </li>
@@ -611,16 +625,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conditional-statements" class="md-nav__link">
-    Conditional statements
+  <a href="#explanation-conditional-statements" class="md-nav__link">
+    Explanation - Conditional Statements
   </a>
   
-    <nav class="md-nav" aria-label="Conditional statements">
+    <nav class="md-nav" aria-label="Explanation - Conditional Statements">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#if-statement" class="md-nav__link">
     If statement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limitations-of-the-if-statement" class="md-nav__link">
+    Limitations of the if statement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#else-statement" class="md-nav__link">
+    Else Statement
   </a>
   
 </li>
@@ -678,19 +706,113 @@
 <li><code>else</code></li>
 <li><abbr title="A statement that will evaluate to either True or False. Used in loops and conditional statements to determine what code to run">logical test</abbr>/test condition</li>
 </ul>
-<h2 id="conditional-statements">Conditional statements</h2>
+<h2 id="explanation-conditional-statements">Explanation - Conditional Statements</h2>
 <p>A conditional statement allows your code to make decisions.</p>
 <h3 id="if-statement">If statement</h3>
-<p>An if statement is the simplest version:</p>
-<p><em>if</em> the test condition is true, <em>then</em> do something</p>
+<p>An if statement is the simplest version of a conditional statement:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>*if* the test condition is true, *then* do something
+</code></pre></div>
+</td></tr></table>
 <p>In code:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>  <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That&#39;s a small number!&quot;</span><span class="p">)</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This happens before both the loop and the conditional statement&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="c1"># loop through every number from 0 - 9</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>  <span class="c1"># print the number. This is outside the conditional statement, so it happens every time</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>  <span class="c1"># if the number is less than 5, also print &quot;That&#39;s a small number!&quot;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>  <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That&#39;s a small number!&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We&#39;ve exited the loop&quot;</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="limitations-of-the-if-statement">Limitations of the if statement</h3>
+<p>An <code>if</code> statement will run if a condition is true. If that condition is not true, nothing happens. But sometimes, that's not what you want. For instance, imagine if you were deciding what to eat for lunch.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>*if* there is pizza available, *then* eat the pizza
+</code></pre></div>
+</td></tr></table>
+<p>In this example, you probably still want to eat something for lunch. Alternatively, you might look at this as: </p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>*if* the button is pushed, *then* turn on the LED
+</code></pre></div>
+</td></tr></table>
+<p>The problem there is that if there isn't pizza, you just don't eat anything. If the button isn't pushed, the LED still stays on once you've turned it on. Sometimes, you can fix this by creating <code>if</code> statements for every possible condition.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>*if* the button is pushed, *then* turn on the LED
+*if* the button isn&#39;t pushed, *then* turn of the LED
+</code></pre></div>
+</td></tr></table>
+<p>This works pretty well if you have a well defined set of possibilities like the button, which can only be in one of two states. There's a couple of problems with this option, though:</p>
+<ol>
+<li>We have to check every if statement, which slows down the code</li>
+<li>We have to identify every possibility, which isn't always an option (do you really want to list out <em>every</em> food you might eat for lunch?)</li>
+<li>Sometimes it might be important to stop checking after you find a true option. Consider the following example:</li>
+</ol>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">student_score</span> <span class="o">=</span> <span class="mi">68</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="k">if</span> <span class="n">student_score</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you earned an A&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="k">if</span> <span class="n">student_score</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you earned a B&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="k">if</span> <span class="n">student_score</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you earned a C&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="k">if</span> <span class="n">student_score</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">:</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you earned a D&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="k">if</span> <span class="n">student_score</span> <span class="o">&lt;</span> <span class="mi">65</span><span class="p">:</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;you failed :( &quot;</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<p>What will print if student_score is 68 as shown above? What if you change it to 75? How about 85? Or 95? If you're not sure, try running the code! It won't do anything to your LED, but it will run just fine and will print to the serial monitor. We'll come back to this example in a little while.</p>
+<h3 id="else-statement">Else Statement</h3>
+<p>You can chain <code>if</code> and <code>else</code> together to create a more advanced conditional statement.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>*if* the condition is true, *then* do something
+*otherwise* do something else
+
+*if* there is pizza available, eat a slice of pizza
+*otherwise* eat the tastiest available lunch
+
+*if* the button is pushed, *then* turn on the LED
+*otherwise* turn off the LED
+</code></pre></div>
+</td></tr></table>
+<p>The way this works is that if the conditional test for the <code>if</code> statement is true, the indented code under <code>if</code> will run, and the computer will skip <code>else</code>. If the test isn't true, the <code>if</code> statement is skipped and the indented code under <code>else</code> will run. If you want to see this in action, make sure you've got a button set up correctly and try the code below:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1"># skipped setup code for brevity</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="c1">################################</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="k">if</span> <span class="n">button</span><span class="o">.</span><span class="n">value</span><span class="p">:</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the button is returning True&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the button is not returning True&quot;</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 <h2 id="try-it">Try It</h2>
