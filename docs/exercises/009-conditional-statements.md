@@ -9,7 +9,7 @@
 - Go to [Wokwi](https://wokwi.com/) and create a new CircuitPython project by clicking the <button style="color:white;background-color:purple;padding:.5em;border-radius:.5em;">+ More Options</button> button, then choosing `CircuitPython on Raspberry Pi Pico`
 - Find the <button style="color:white;background-color:purple;padding:.5em;border-radius:50%"> + </button> button and add a pushbutton to your circuit. It should like something like the circuit below
 
-![pi pico and pushbutton](../../img/circuitsim-screenshots/button-screenshot-2.png)
+![pi pico and pushbutton](../../img/circuitsim-screenshots/button-screenshot-4.png)
 
 ## Concepts & Vocabulary
 - Conditional statement

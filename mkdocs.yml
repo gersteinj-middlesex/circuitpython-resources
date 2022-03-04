@@ -19,6 +19,7 @@ nav:
     - 007 - Stepping Between Values: exercises\007-stepping-between-values.md
     - 008 - Digital Inputs: exercises\008-digital-inputs.md
     - 009 - Conditional Statements: exercises\009-conditional-statements.md
+    - 010 - More Conditional Statements: exercises\010-more-conditionals.md
 theme:
   name: material
   palette:
