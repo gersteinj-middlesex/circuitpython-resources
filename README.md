@@ -1,2 +1,2 @@
 # circuitpython-resources
-CircuitPython Resources fo rhte Programming &amp; Digital Electronics class
+CircuitPython Resources for the Programming &amp; Digital Electronics class

@@ -1,0 +1,21 @@
+{
+  "name": "circuitpython-resources",
+  "version": "1.0.0",
+  "description": "CircuitPython Resources for the Programming &amp; Digital Electronics class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-work:gersteinj-middlesex/circuitpython-resources.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0"
+  }
+}

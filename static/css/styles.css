@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Syne+Mono&family=Syne+Tactile&family=Syne:wght@400;600;800&display=swap');
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+:root {
+   
+}
+
+
+#layout {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background-color: var(--surface-1);
+    
+    /* gap: var(--size-2); */
+}
+
+#menu {
+    box-sizing: border-box;
+    width: var(--size-fluid-8);
+    background-color: var(--surface-3);
+    box-shadow: var(--inner-shadow-4);
+    padding-right: var(--size-1);
+}
+
+#menu ul{
+    list-style: none;
+    text-align: end;
+}
+
+#content {
+    padding-left: var(--size-1);
+    border-left: var(--border-size-1) solid var(--blue-4);
+    flex-grow: 1;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gradient-text {
+    background-image: var(--gradient-3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+pre[class*="language-"]{
+    max-width: var(--size-content-3);
+}
