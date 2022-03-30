@@ -20,6 +20,7 @@ nav:
     - 008 - Digital Inputs: exercises\008-digital-inputs.md
     - 009 - Conditional Statements: exercises\009-conditional-statements.md
     - 010 - More Conditional Statements: exercises\010-more-conditionals.md
+    - 014 - Review Exercises: exercises\014-review.md
 theme:
   name: material
   palette:
